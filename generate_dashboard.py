@@ -367,7 +367,7 @@ def generate_dashboard():
 </body>
 </html>"""
     # Write
-    output_file = output_dir / "index.html"
+    output_file = Path("index.html")
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"Dashboard generado: {output_file}")
