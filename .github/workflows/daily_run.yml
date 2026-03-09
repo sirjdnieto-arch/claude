@@ -1,0 +1,35 @@
+name: Trinidad System - Daily Analysis
+on:
+  schedule:
+    # L-V a las 08:00 UTC (10:00 hora España)
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch:  # Permite ejecución manual desde GitHub
+permissions:
+  contents: write
+  pages: write
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run analysis
+        run: python main.py
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+      - name: Generate dashboard
+        run: python generate_dashboard.py
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          force_orphan: true
