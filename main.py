@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
 TRINIDAD SYSTEM — Motor Principal
-L'CRACK v7.2 (Sectorial + HMM) + PISTOLERO v3.2 (Factores Anticipatorios)
+L'CRACK v7.3 (Sectorial + HMM + Score Compuesto) + PISTOLERO v3.2 (Factores Anticipatorios)
 Ejecución diaria via GitHub Actions
-Código idéntico al probado en Colab, con guardado a JSON para dashboard.
+CAMBIOS v7.3 vs v7.2:
+  - Score compuesto: 60% HMM + 40% Z-Risk (escala centrada -1/0/+1)
+  - Fix: "Últimos 5d" muestra consenso de los 5 modelos, no solo semilla 42
+  - Fix: BEAR (0) × confidence ya no colapsa a 0 gracias a escala centrada
 """
 import warnings
 warnings.filterwarnings("ignore")
@@ -189,7 +192,7 @@ class DataProvider:
         self._features_cache[cache_key] = feat
         return feat
 # ============================================================
-# L'CRACK v7.2 — HMM ESTABILIZADO + PERCENTILES
+# L'CRACK v7.3 — HMM + SCORE COMPUESTO + WINDOW CONSENSUS
 # ============================================================
 class LCrackV72:
     LCRACK_ETFS = {
@@ -215,6 +218,9 @@ class LCrackV72:
     HMM_SEEDS = [42, 123, 256, 789, 1024]
     CONFIDENCE_THRESHOLD = 0.60
     SMOOTHING_WINDOW = 5
+    # --- v7.3: Pesos del score compuesto ---
+    COMPOSITE_WEIGHT_HMM = 0.60
+    COMPOSITE_WEIGHT_ZRISK = 0.40
     def __init__(self, data_provider):
         self.dp = data_provider
         self.df_p = pd.DataFrame()
@@ -303,14 +309,28 @@ class LCrackV72:
         last_obs = X_scaled[-1]
         labels_map = {0: "BEAR", 1: "LATERAL", 2: "BULL"}
         vote_labels = [labels_map[v] for v in ensemble_votes]
-        window_labels = [labels_map[s] for s in ensemble_smoothed[0]] if ensemble_smoothed else []
+        # =====================================================
+        # FIX v7.3: Window consensus — voto mayoritario por día
+        # de los 5 modelos, NO solo la semilla 42
+        # =====================================================
+        window_consensus = []
+        for day_idx in range(self.SMOOTHING_WINDOW):
+            day_votes = [ensemble_smoothed[seed_idx][day_idx]
+                         for seed_idx in range(len(ensemble_smoothed))]
+            day_counts = np.bincount(day_votes, minlength=3)
+            window_consensus.append(int(np.argmax(day_counts)))
+        window_consensus_labels = [labels_map[s] for s in window_consensus]
+        # Raw per-seed windows (para debug avanzado)
+        window_per_seed = [[labels_map[s] for s in seed_window]
+                           for seed_window in ensemble_smoothed]
         debug = {
             "votos": vote_labels,
             "bear": int(vote_counts[0]),
             "lateral": int(vote_counts[1]),
             "bull": int(vote_counts[2]),
             "prob_media": round(float(avg_prob * 100), 1),
-            "window": window_labels,
+            "window": window_consensus_labels,       # FIX: consenso de 5 modelos
+            "window_per_seed": window_per_seed,       # NUEVO: detalle por semilla
             "consenso_pct": round(float(confidence * 100), 1),
         }
         return final_regime, confidence, float(last_obs[0]), float(last_obs[1]), debug
@@ -327,6 +347,70 @@ class LCrackV72:
             return float(np.clip(bias_z - spread_z, -3, 3))
         except:
             return 0.0
+    # =====================================================
+    # NUEVO v7.3: Score compuesto HMM + Z-Risk
+    # Escala centrada: BEAR=-1, LATERAL=0, BULL=+1
+    # Resuelve: BEAR(0) × conf = 0 siempre
+    # =====================================================
+    def get_final_regime(self):
+        """
+        Score compuesto: 60% HMM + 40% Z-Risk (escala centrada)
+        Escala centrada (-1/0/+1) en vez de (0/1/2):
+          - Evita que BEAR × confidence = 0 siempre
+          - Permite que Z-Risk negativo degrade BULL a LATERAL
+          - Permite que Z-Risk positivo promueva BEAR a LATERAL
+        Retorna: (final_regime, final_conf, ret_z, vol_z, debug, z_risk)
+        """
+        # 1. HMM puro
+        regime_hmm, conf_hmm, ret_z, vol_z, debug = self._detect_regime_hmm_stable()
+        # 2. Z-Risk
+        z_risk = self._calc_zrisk()
+        # 3. Escala centrada: BEAR=-1, LATERAL=0, BULL=+1
+        hmm_centered = regime_hmm - 1              # -1, 0, +1
+        hmm_score = hmm_centered * conf_hmm        # rango: -1.0 a +1.0
+        # 4. Z-Risk normalizado a -1/+1
+        zrisk_norm = float(np.clip(z_risk / 3, -1, 1))  # -3→-1, 0→0, +3→+1
+        # 5. Score compuesto
+        final_centered = (self.COMPOSITE_WEIGHT_HMM * hmm_score +
+                          self.COMPOSITE_WEIGHT_ZRISK * zrisk_norm)
+        final_regime = int(np.clip(round(final_centered + 1), 0, 2))
+        # 6. Confianza ajustada por conflicto HMM vs Final
+        conflict = abs(regime_hmm - final_regime)
+        if conflict == 0:
+            final_conf = conf_hmm                  # Sin conflicto: confianza intacta
+        elif conflict == 1:
+            final_conf = conf_hmm * 0.7            # 1 nivel de diferencia: -30%
+        else:
+            final_conf = conf_hmm * 0.5            # 2 niveles: -50%
+        # 7. Logging
+        regime_labels = {0: "BEAR", 1: "LATERAL", 2: "BULL"}
+        print(f"\n  SCORE COMPUESTO (v7.3):")
+        print(f"    HMM puro     : {regime_labels[regime_hmm]} ({conf_hmm*100:.0f}%)")
+        print(f"    HMM score    : {hmm_score:+.3f}  (centrado: {hmm_centered:+d} x {conf_hmm:.2f})")
+        print(f"    Z-Risk       : {z_risk:+.2f}  (normalizado: {zrisk_norm:+.3f})")
+        print(f"    Score final  : {final_centered:+.3f}  → regime {final_regime} ({regime_labels[final_regime]})")
+        if conflict > 0:
+            print(f"    CONFLICTO    : HMM={regime_labels[regime_hmm]} vs Final={regime_labels[final_regime]}"
+                  f" → confianza {conf_hmm*100:.0f}% → {final_conf*100:.0f}%")
+        else:
+            print(f"    Sin conflicto: confianza {final_conf*100:.0f}%")
+        # 8. Enriquecer debug con info del composite
+        debug["composite"] = {
+            "hmm_regime": regime_labels[regime_hmm],
+            "hmm_conf_pct": round(float(conf_hmm * 100), 1),
+            "hmm_score": round(float(hmm_score), 3),
+            "z_risk": round(float(z_risk), 2),
+            "zrisk_norm": round(float(zrisk_norm), 3),
+            "final_score": round(float(final_centered), 3),
+            "final_regime": regime_labels[final_regime],
+            "final_conf_pct": round(float(final_conf * 100), 1),
+            "conflict": int(conflict),
+            "weights": {
+                "hmm": self.COMPOSITE_WEIGHT_HMM,
+                "zrisk": self.COMPOSITE_WEIGHT_ZRISK,
+            },
+        }
+        return final_regime, final_conf, ret_z, vol_z, debug, z_risk
     def _calc_metrics(self):
         gf_accel = (self.df_p.pct_change(5).rolling(5).mean() -
                     self.df_p.pct_change(20).rolling(20).mean()) * 100
@@ -406,22 +490,41 @@ class LCrackV72:
         return df
     def run(self):
         print("=" * 75)
-        print("  L'CRACK v7.2 — HMM ESTABILIZADO + PERCENTILES")
+        print("  L'CRACK v7.3 — HMM + SCORE COMPUESTO + PERCENTILES")
         print("=" * 75)
         if self.df_p.empty:
             self._load_prices()
-        regime, confidence, ret_z, vol_z, debug = self._detect_regime_hmm_stable()
+        # =====================================================
+        # v7.3: Usar score compuesto en vez de HMM puro
+        # ANTES:
+        #   regime, confidence, ret_z, vol_z, debug = self._detect_regime_hmm_stable()
+        #   self.regime = regime
+        #   self.regime_confidence = confidence
+        #   self.hmm_debug = debug
+        #   ...
+        #   self.z_risk = self._calc_zrisk()
+        #
+        # AHORA: Todo unificado en get_final_regime()
+        # =====================================================
+        regime, confidence, ret_z, vol_z, debug, z_risk = self.get_final_regime()
         self.regime = regime
         self.regime_confidence = confidence
         self.hmm_debug = debug
+        self.z_risk = z_risk
         regime_labels = {0: "BEAR (Miedo)", 1: "LATERAL (Indecision)", 2: "BULL (Optimismo)"}
-        print(f"\n  HMM ESTABILIZADO (Ensemble x5)")
-        print(f"  Estado Actual : {regime_labels.get(regime, '?')}")
-        print(f"  Consenso      : {debug.get('consenso_pct', 0)}%")
-        print(f"  Input Retorno : {ret_z:+.2f} Sigmas")
-        print(f"  Input Volatil.: {vol_z:+.2f} Sigmas")
-        self.z_risk = self._calc_zrisk()
-        print(f"\n  Z-RISK SISTEMA: {self.z_risk:.2f}")
+        composite = debug.get("composite", {})
+        print(f"\n  REGIMEN FINAL")
+        print(f"  Estado Compuesto: {regime_labels.get(regime, '?')}")
+        print(f"  Confianza Final : {confidence*100:.0f}%")
+        print(f"  Z-Risk Sistemico: {self.z_risk:+.2f}")
+        print(f"  Input Retorno   : {ret_z:+.2f} Sigmas")
+        print(f"  Input Volatil.  : {vol_z:+.2f} Sigmas")
+        # Mostrar si hubo override
+        hmm_puro = composite.get("hmm_regime", "?")
+        final_label = composite.get("final_regime", "?")
+        if hmm_puro != final_label:
+            print(f"\n  OVERRIDE: HMM decia {hmm_puro} pero Z-Risk ({self.z_risk:+.2f}) "
+                  f"lo corrigio a {final_label}")
         gf_z_s, rot_z_s, rvol_s = self._calc_metrics()
         investable = [s for s in self.df_p.columns if s not in self.MACRO_FILTERS]
         rows = []
@@ -466,7 +569,7 @@ class LCrackV72:
         self.regime_data = {
             "regime": int(regime),
             "regime_label": regime_labels.get(regime, "?"),
-            "consensus": debug.get('consenso_pct', 0),
+            "consensus": round(confidence * 100, 1),
             "ret_z": round(ret_z, 2),
             "vol_z": round(vol_z, 2),
             "z_risk": round(self.z_risk, 2),
@@ -801,12 +904,12 @@ def main():
     print("=" * 75)
     print("  TRINIDAD SYSTEM — Ejecucion Diaria")
     print(f"  {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
-    print("  L'CRACK v7.2 + PISTOLERO v3.2 (Anticipatorio)")
+    print("  L'CRACK v7.3 + PISTOLERO v3.2 (Anticipatorio)")
     print("=" * 75)
     dp = DataProvider()
     # 1. L'CRACK
     print("\n" + "=" * 40)
-    print("  PASO 1: L'CRACK SECTORIAL v7.2")
+    print("  PASO 1: L'CRACK SECTORIAL v7.3")
     print("=" * 40)
     lcrack = LCrackV72(dp)
     lcrack_data = lcrack.run()
@@ -824,7 +927,7 @@ def main():
         "lcrack": lcrack_data,
         "pistolero": pistolero_data,
         "generated_at": datetime.utcnow().isoformat(),
-        "version": "L'CRACK v7.2 + PISTOLERO v3.2",
+        "version": "L'CRACK v7.3 + PISTOLERO v3.2",
     }
     with open(output_dir / "results.json", "w") as f:
         json.dump(combined, f, indent=2, default=str)
@@ -834,13 +937,20 @@ def main():
     print("  RESUMEN")
     print("=" * 75)
     regime_labels = {0: "BEAR", 1: "LATERAL", 2: "BULL"}
-    print(f"  Regimen: {regime_labels.get(regime, '?')} ({lcrack.regime_confidence*100:.0f}% consenso)")
-    print(f"  Z-Risk: {lcrack.z_risk:+.2f}")
-    print(f"  Sectores: {len(lcrack_data.get('sectors', []))}")
-    print(f"  Stocks analizados: {pistolero_data.get('total_analyzed', 0)}")
+    composite = lcrack.hmm_debug.get("composite", {})
+    hmm_puro = composite.get("hmm_regime", "?")
+    final_label = composite.get("final_regime", "?")
+    print(f"  Regimen Final : {regime_labels.get(regime, '?')} ({lcrack.regime_confidence*100:.0f}% confianza)")
+    print(f"  HMM Puro      : {hmm_puro} ({composite.get('hmm_conf_pct', 0)}%)")
+    print(f"  Z-Risk        : {lcrack.z_risk:+.2f}")
+    print(f"  Score Compuesto: {composite.get('final_score', 0):+.3f}")
+    if hmm_puro != final_label:
+        print(f"  OVERRIDE      : {hmm_puro} → {final_label} (Z-Risk corrigio)")
+    print(f"  Sectores      : {len(lcrack_data.get('sectors', []))}")
+    print(f"  Stocks        : {pistolero_data.get('total_analyzed', 0)}")
     if pistolero_data.get('stocks'):
         top = pistolero_data['stocks'][0]
-        print(f"  Top stock: {top['ticker']} (score: {top['score']})")
+        print(f"  Top stock     : {top['ticker']} (score: {top['score']})")
     print("  TRINIDAD SYSTEM completado.")
     return combined
 if __name__ == "__main__":
