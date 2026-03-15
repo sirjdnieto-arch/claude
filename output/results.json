@@ -25,67 +25,65 @@
         "BULL",
         "BULL"
       ],
-      "window_per_seed": [
-        [
+      "window_per_seed": {
+        "42": [
           "LATERAL",
           "LATERAL",
           "LATERAL",
           "BEAR",
           "BEAR"
         ],
-        [
+        "123": [
           "BULL",
           "BULL",
           "BULL",
           "BULL",
           "BULL"
         ],
-        [
+        "256": [
           "BULL",
           "BULL",
           "BULL",
           "BULL",
           "BULL"
         ],
-        [
+        "789": [
           "LATERAL",
           "LATERAL",
           "LATERAL",
           "BEAR",
           "BEAR"
         ],
-        [
+        "1024": [
           "BULL",
           "BULL",
           "BULL",
           "BULL",
           "BULL"
         ]
-      ],
+      },
       "consenso_pct": 60.0,
       "composite": {
-        "hmm_regime": "BULL",
-        "hmm_conf_pct": 60.0,
-        "hmm_score": 0.6,
+        "hmm_raw": "2",
+        "hmm_label": "BULL",
+        "hmm_conf": 60.0,
         "z_risk": -1.88,
-        "zrisk_norm": -0.626,
-        "final_score": 0.11,
-        "final_regime": "LATERAL",
-        "final_conf_pct": 42.0,
-        "conflict": 1,
-        "weights": {
-          "hmm": 0.6,
-          "zrisk": 0.4
-        }
+        "zrisk_norm": -0.627,
+        "hmm_score": 0.6,
+        "final_score": 0.109,
+        "final_regime": 1,
+        "final_label": "LATERAL",
+        "final_conf": 42.0,
+        "override": "True"
       }
     },
     "sectors": [
       {
         "Sector": "China",
         "ETF": "FXI",
-        "GF_Z": 2.34,
-        "Rot_Z": 0.39,
-        "RVOL": 0.65,
+        "GF_Z": 2.82,
+        "Rot_Z": 0.72,
+        "RVOL": 0.68,
         "Status": "SALIDA SUGERIDA",
         "Notas": "Precio sube sin volumen (Trampa).",
         "Emoji": "exit"
@@ -93,8 +91,38 @@
       {
         "Sector": "Europa",
         "ETF": "EZU",
-        "GF_Z": 1.47,
-        "Rot_Z": -0.58,
+        "GF_Z": 1.69,
+        "Rot_Z": -0.87,
+        "RVOL": 0.92,
+        "Status": "MEJORANDO",
+        "Notas": "Ganando fuerza relativa.",
+        "Emoji": "up"
+      },
+      {
+        "Sector": "Bancos",
+        "ETF": "XLF",
+        "GF_Z": 0.99,
+        "Rot_Z": -0.6,
+        "RVOL": 0.79,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "Ciberseguridad",
+        "ETF": "HACK",
+        "GF_Z": 0.81,
+        "Rot_Z": 0.69,
+        "RVOL": 0.56,
+        "Status": "MEJORANDO",
+        "Notas": "Ganando fuerza relativa.",
+        "Emoji": "up"
+      },
+      {
+        "Sector": "Tecnologia",
+        "ETF": "XLK",
+        "GF_Z": 0.33,
+        "Rot_Z": 0.26,
         "RVOL": 0.98,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
@@ -103,9 +131,9 @@
       {
         "Sector": "Semiconductores",
         "ETF": "SMH",
-        "GF_Z": 0.87,
-        "Rot_Z": -0.31,
-        "RVOL": 0.73,
+        "GF_Z": 0.31,
+        "Rot_Z": 0.39,
+        "RVOL": 0.74,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
         "Emoji": "up"
@@ -113,109 +141,19 @@
       {
         "Sector": "Emergentes",
         "ETF": "EEM",
-        "GF_Z": 0.63,
-        "Rot_Z": -0.38,
+        "GF_Z": 0.15,
+        "Rot_Z": -0.39,
         "RVOL": 0.85,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
         "Emoji": "up"
       },
       {
-        "Sector": "Bancos",
-        "ETF": "XLF",
-        "GF_Z": 0.57,
-        "Rot_Z": -0.03,
-        "RVOL": 0.7,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
         "Sector": "Mineria",
         "ETF": "XME",
-        "GF_Z": 0.43,
-        "Rot_Z": -0.89,
-        "RVOL": 0.8,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "Value",
-        "ETF": "VTV",
-        "GF_Z": 0.39,
-        "Rot_Z": 0.38,
-        "RVOL": 0.82,
-        "Status": "MEJORANDO",
-        "Notas": "Ganando fuerza relativa.",
-        "Emoji": "up"
-      },
-      {
-        "Sector": "Crypto",
-        "ETF": "BTC-USD",
-        "GF_Z": 0.34,
-        "Rot_Z": 1.13,
-        "RVOL": 0.5,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "Tecnologia",
-        "ETF": "XLK",
-        "GF_Z": 0.33,
-        "Rot_Z": -0.32,
-        "RVOL": 0.82,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "Uranio",
-        "ETF": "URA",
-        "GF_Z": 0.17,
-        "Rot_Z": -0.92,
-        "RVOL": 1.06,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "Transporte",
-        "ETF": "IYT",
-        "GF_Z": 0.1,
-        "Rot_Z": -0.42,
-        "RVOL": 0.48,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "IA-Robotica",
-        "ETF": "BOTZ",
-        "GF_Z": 0.09,
-        "Rot_Z": -0.73,
-        "RVOL": 0.95,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "Consumo Basico",
-        "ETF": "XLP",
-        "GF_Z": 0.02,
-        "Rot_Z": 0.43,
-        "RVOL": 0.63,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "Ciberseguridad",
-        "ETF": "HACK",
-        "GF_Z": -0.08,
-        "Rot_Z": 0.56,
-        "RVOL": 0.57,
+        "GF_Z": 0.11,
+        "Rot_Z": -0.9,
+        "RVOL": 0.77,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -223,19 +161,59 @@
       {
         "Sector": "Consumo Lujo",
         "ETF": "XLY",
-        "GF_Z": -0.21,
-        "Rot_Z": -0.46,
+        "GF_Z": 0.1,
+        "Rot_Z": -0.68,
         "RVOL": 0.9,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
       },
       {
-        "Sector": "Salud",
-        "ETF": "XLV",
-        "GF_Z": -0.28,
-        "Rot_Z": -0.13,
-        "RVOL": 0.94,
+        "Sector": "Crypto",
+        "ETF": "BTC-USD",
+        "GF_Z": 0.04,
+        "Rot_Z": 1.4,
+        "RVOL": 0.87,
+        "Status": "MEJORANDO",
+        "Notas": "Ganando fuerza relativa.",
+        "Emoji": "up"
+      },
+      {
+        "Sector": "Uranio",
+        "ETF": "URA",
+        "GF_Z": -0.16,
+        "Rot_Z": -0.49,
+        "RVOL": 0.89,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "Consumo Basico",
+        "ETF": "XLP",
+        "GF_Z": -0.16,
+        "Rot_Z": 0.14,
+        "RVOL": 0.72,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "IA-Robotica",
+        "ETF": "BOTZ",
+        "GF_Z": -0.17,
+        "Rot_Z": -1.14,
+        "RVOL": 0.78,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "Value",
+        "ETF": "VTV",
+        "GF_Z": -0.19,
+        "Rot_Z": -0.14,
+        "RVOL": 0.91,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -243,9 +221,19 @@
       {
         "Sector": "IA",
         "ETF": "AIQ",
-        "GF_Z": -0.34,
-        "Rot_Z": -0.45,
-        "RVOL": 0.94,
+        "GF_Z": -0.28,
+        "Rot_Z": -0.24,
+        "RVOL": 0.79,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "Transporte",
+        "ETF": "IYT",
+        "GF_Z": -0.51,
+        "Rot_Z": -0.9,
+        "RVOL": 0.79,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -253,9 +241,9 @@
       {
         "Sector": "Seguros",
         "ETF": "KIE",
-        "GF_Z": -0.51,
-        "Rot_Z": 0.43,
-        "RVOL": 0.86,
+        "GF_Z": -0.53,
+        "Rot_Z": -0.4,
+        "RVOL": 0.94,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -264,38 +252,18 @@
         "Sector": "Plata",
         "ETF": "SLV",
         "GF_Z": -0.67,
-        "Rot_Z": -0.97,
-        "RVOL": 0.86,
+        "Rot_Z": -1.01,
+        "RVOL": 0.74,
         "Status": "DEBILITANDOSE",
         "Notas": "Perdiendo fuerza relativa.",
         "Emoji": "down"
       },
       {
-        "Sector": "Industria",
-        "ETF": "XLI",
-        "GF_Z": -0.83,
-        "Rot_Z": -0.45,
-        "RVOL": 0.98,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "Energia",
-        "ETF": "XLE",
-        "GF_Z": -0.91,
-        "Rot_Z": 0.76,
-        "RVOL": 0.62,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
-        "Sector": "Inmuebles",
-        "ETF": "XLRE",
-        "GF_Z": -0.98,
-        "Rot_Z": 0.31,
-        "RVOL": 0.8,
+        "Sector": "Salud",
+        "ETF": "XLV",
+        "GF_Z": -0.89,
+        "Rot_Z": -0.53,
+        "RVOL": 0.92,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -303,19 +271,9 @@
       {
         "Sector": "Oro",
         "ETF": "GLD",
-        "GF_Z": -1.13,
-        "Rot_Z": -0.65,
-        "RVOL": 0.91,
-        "Status": "DEBILITANDOSE",
-        "Notas": "Perdiendo fuerza relativa.",
-        "Emoji": "down"
-      },
-      {
-        "Sector": "Utilities",
-        "ETF": "XLU",
-        "GF_Z": -1.32,
-        "Rot_Z": 0.68,
-        "RVOL": 1.01,
+        "GF_Z": -1.1,
+        "Rot_Z": -0.46,
+        "RVOL": 0.84,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -323,9 +281,39 @@
       {
         "Sector": "Defensa",
         "ETF": "ITA",
-        "GF_Z": -1.4,
-        "Rot_Z": -0.67,
-        "RVOL": 0.93,
+        "GF_Z": -1.23,
+        "Rot_Z": -1.17,
+        "RVOL": 1.72,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "Industria",
+        "ETF": "XLI",
+        "GF_Z": -1.24,
+        "Rot_Z": -0.96,
+        "RVOL": 0.96,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "Inmuebles",
+        "ETF": "XLRE",
+        "GF_Z": -1.28,
+        "Rot_Z": -0.04,
+        "RVOL": 0.76,
+        "Status": "DEBILITANDOSE",
+        "Notas": "Perdiendo fuerza relativa.",
+        "Emoji": "down"
+      },
+      {
+        "Sector": "Energia",
+        "ETF": "XLE",
+        "GF_Z": -1.5,
+        "Rot_Z": 1.24,
+        "RVOL": 0.71,
         "Status": "DEBILITANDOSE",
         "Notas": "Perdiendo fuerza relativa.",
         "Emoji": "down"
@@ -334,8 +322,18 @@
         "Sector": "Comunicaciones",
         "ETF": "XLC",
         "GF_Z": -1.6,
-        "Rot_Z": -0.32,
-        "RVOL": 1.25,
+        "Rot_Z": -0.42,
+        "RVOL": 1.06,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "Utilities",
+        "ETF": "XLU",
+        "GF_Z": -1.73,
+        "Rot_Z": 0.9,
+        "RVOL": 0.91,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -343,15 +341,15 @@
       {
         "Sector": "Agricolas",
         "ETF": "DBA",
-        "GF_Z": -2.96,
-        "Rot_Z": 0.61,
-        "RVOL": 2.52,
+        "GF_Z": -2.35,
+        "Rot_Z": 0.76,
+        "RVOL": 2.08,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
       }
     ],
-    "timestamp": "2026-03-15T18:38:28.458218"
+    "timestamp": "2026-03-15T19:44:57.327835"
   },
   "pistolero": {
     "stocks": [
@@ -1061,7 +1059,7 @@
       },
       {
         "ticker": "AVGO",
-        "sector": "Technology",
+        "sector": "N/A",
         "index": "Nasdaq100",
         "score": 0.616,
         "rsi": 45.5,
@@ -3338,7 +3336,7 @@
       },
       {
         "ticker": "LYV",
-        "sector": "Communication Services",
+        "sector": "N/A",
         "index": "S&P500",
         "score": 0.47,
         "rsi": 44.7,
@@ -5406,7 +5404,7 @@
       },
       {
         "ticker": "FITB",
-        "sector": "N/A",
+        "sector": "Financial Services",
         "index": "S&P500",
         "score": 0.349,
         "rsi": 18.5,
@@ -6903,8 +6901,8 @@
     ],
     "regime": 1,
     "total_analyzed": 595,
-    "timestamp": "2026-03-15T18:41:31.469344"
+    "timestamp": "2026-03-15T19:47:35.798649"
   },
-  "generated_at": "2026-03-15T18:41:31.469905",
+  "generated_at": "2026-03-15T19:47:35.799066",
   "version": "L'CRACK v7.3 + PISTOLERO v3.2"
 }
