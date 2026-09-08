@@ -4,15 +4,15 @@
     "regime_label": "LATERAL (Indecision)",
     "consensus": 60.0,
     "ret_z": -0.05,
-    "vol_z": -0.87,
-    "z_risk": 2.09,
+    "vol_z": -0.94,
+    "z_risk": 1.72,
     "details": {
       "votos": [
         "BEAR",
         "LATERAL",
         "LATERAL",
-        "LATERAL",
-        "BEAR"
+        "BEAR",
+        "LATERAL"
       ],
       "bear": 2,
       "lateral": 3,
@@ -28,7 +28,7 @@
       "window_per_seed": {
         "42": [
           "LATERAL",
-          "LATERAL",
+          "BEAR",
           "BEAR",
           "BEAR",
           "BEAR"
@@ -49,17 +49,17 @@
         ],
         "789": [
           "LATERAL",
-          "LATERAL",
-          "LATERAL",
-          "LATERAL",
-          "LATERAL"
+          "BEAR",
+          "BEAR",
+          "BEAR",
+          "BEAR"
         ],
         "1024": [
           "LATERAL",
           "LATERAL",
-          "BEAR",
-          "BEAR",
-          "BEAR"
+          "LATERAL",
+          "LATERAL",
+          "LATERAL"
         ]
       },
       "consenso_pct": 60.0,
@@ -67,10 +67,10 @@
         "hmm_raw": "1",
         "hmm_label": "LATERAL",
         "hmm_conf": 60.0,
-        "z_risk": 2.09,
-        "zrisk_norm": 0.698,
+        "z_risk": 1.72,
+        "zrisk_norm": 0.574,
         "hmm_score": 0.0,
-        "final_score": 0.279,
+        "final_score": 0.23,
         "final_regime": 1,
         "final_label": "LATERAL",
         "final_conf": 60.0,
@@ -81,9 +81,9 @@
       {
         "Sector": "Industria",
         "ETF": "XLI",
-        "GF_Z": 1.34,
-        "Rot_Z": -0.43,
-        "RVOL": 0.9,
+        "GF_Z": 1.52,
+        "Rot_Z": -0.28,
+        "RVOL": 0.85,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
         "Emoji": "up"
@@ -91,9 +91,9 @@
       {
         "Sector": "Defensa",
         "ETF": "ITA",
-        "GF_Z": 1.33,
-        "Rot_Z": -0.83,
-        "RVOL": 0.84,
+        "GF_Z": 1.45,
+        "Rot_Z": -0.67,
+        "RVOL": 0.9,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -101,9 +101,9 @@
       {
         "Sector": "Utilities",
         "ETF": "XLU",
-        "GF_Z": 0.92,
-        "Rot_Z": 0.26,
-        "RVOL": 0.95,
+        "GF_Z": 1.0,
+        "Rot_Z": 0.35,
+        "RVOL": 0.91,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
         "Emoji": "up"
@@ -111,9 +111,9 @@
       {
         "Sector": "IA-Robotica",
         "ETF": "BOTZ",
-        "GF_Z": 0.64,
-        "Rot_Z": 0.41,
-        "RVOL": 1.13,
+        "GF_Z": 0.67,
+        "Rot_Z": 0.45,
+        "RVOL": 1.18,
         "Status": "LIDER TECNICO",
         "Notas": "Aceleracion con volumen.",
         "Emoji": "rocket"
@@ -121,29 +121,19 @@
       {
         "Sector": "Semiconductores",
         "ETF": "SMH",
-        "GF_Z": 0.59,
-        "Rot_Z": 1.19,
-        "RVOL": 1.19,
+        "GF_Z": 0.67,
+        "Rot_Z": 1.09,
+        "RVOL": 1.28,
         "Status": "LIDER INSTITUCIONAL",
         "Notas": "Confluencia: momentum + rotacion + volumen.",
         "Emoji": "whale"
       },
       {
-        "Sector": "Seguros",
-        "ETF": "KIE",
-        "GF_Z": 0.27,
-        "Rot_Z": 0.04,
-        "RVOL": 1.1,
-        "Status": "MEJORANDO",
-        "Notas": "Ganando fuerza relativa.",
-        "Emoji": "up"
-      },
-      {
         "Sector": "Tecnologia",
         "ETF": "XLK",
-        "GF_Z": 0.26,
-        "Rot_Z": 0.63,
-        "RVOL": 0.9,
+        "GF_Z": 0.23,
+        "Rot_Z": 0.67,
+        "RVOL": 0.88,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
         "Emoji": "up"
@@ -151,19 +141,29 @@
       {
         "Sector": "Ciberseguridad",
         "ETF": "HACK",
-        "GF_Z": 0.24,
-        "Rot_Z": -0.52,
-        "RVOL": 0.48,
+        "GF_Z": 0.2,
+        "Rot_Z": -0.6,
+        "RVOL": 0.38,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
       },
       {
+        "Sector": "Seguros",
+        "ETF": "KIE",
+        "GF_Z": 0.2,
+        "Rot_Z": 0.11,
+        "RVOL": 1.1,
+        "Status": "MEJORANDO",
+        "Notas": "Ganando fuerza relativa.",
+        "Emoji": "up"
+      },
+      {
         "Sector": "China",
         "ETF": "FXI",
-        "GF_Z": 0.18,
-        "Rot_Z": 0.44,
-        "RVOL": 1.2,
+        "GF_Z": 0.19,
+        "Rot_Z": 0.43,
+        "RVOL": 1.26,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
         "Emoji": "up"
@@ -171,8 +171,8 @@
       {
         "Sector": "Consumo Lujo",
         "ETF": "XLY",
-        "GF_Z": 0.04,
-        "Rot_Z": -0.68,
+        "GF_Z": 0.17,
+        "Rot_Z": -0.53,
         "RVOL": 1.0,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
@@ -181,9 +181,9 @@
       {
         "Sector": "Europa",
         "ETF": "EZU",
-        "GF_Z": -0.13,
-        "Rot_Z": -0.31,
-        "RVOL": 1.18,
+        "GF_Z": 0.01,
+        "Rot_Z": -0.12,
+        "RVOL": 0.7,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -191,9 +191,9 @@
       {
         "Sector": "Inmuebles",
         "ETF": "XLRE",
-        "GF_Z": -0.18,
-        "Rot_Z": -0.61,
-        "RVOL": 0.88,
+        "GF_Z": -0.0,
+        "Rot_Z": -0.46,
+        "RVOL": 0.86,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -201,9 +201,9 @@
       {
         "Sector": "Transporte",
         "ETF": "IYT",
-        "GF_Z": -0.25,
-        "Rot_Z": -0.6,
-        "RVOL": 1.09,
+        "GF_Z": -0.05,
+        "Rot_Z": -0.45,
+        "RVOL": 1.07,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -211,9 +211,9 @@
       {
         "Sector": "IA",
         "ETF": "AIQ",
-        "GF_Z": -0.31,
+        "GF_Z": -0.32,
         "Rot_Z": 0.43,
-        "RVOL": 1.11,
+        "RVOL": 1.13,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
         "Emoji": "up"
@@ -221,9 +221,9 @@
       {
         "Sector": "Bancos",
         "ETF": "XLF",
-        "GF_Z": -0.31,
-        "Rot_Z": 0.08,
-        "RVOL": 1.0,
+        "GF_Z": -0.37,
+        "Rot_Z": 0.19,
+        "RVOL": 0.97,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -231,9 +231,19 @@
       {
         "Sector": "Comunicaciones",
         "ETF": "XLC",
-        "GF_Z": -0.48,
-        "Rot_Z": -0.25,
-        "RVOL": 0.74,
+        "GF_Z": -0.5,
+        "Rot_Z": -0.14,
+        "RVOL": 0.71,
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
+      },
+      {
+        "Sector": "Value",
+        "ETF": "VTV",
+        "GF_Z": -0.61,
+        "Rot_Z": 0.31,
+        "RVOL": 0.92,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -241,29 +251,19 @@
       {
         "Sector": "Emergentes",
         "ETF": "EEM",
-        "GF_Z": -0.62,
-        "Rot_Z": 0.97,
-        "RVOL": 1.22,
+        "GF_Z": -0.61,
+        "Rot_Z": 0.89,
+        "RVOL": 1.32,
         "Status": "MEJORANDO",
         "Notas": "Ganando fuerza relativa.",
         "Emoji": "up"
       },
       {
-        "Sector": "Value",
-        "ETF": "VTV",
-        "GF_Z": -0.84,
-        "Rot_Z": 0.22,
-        "RVOL": 0.82,
-        "Status": "NEUTRO",
-        "Notas": "Sin senal clara.",
-        "Emoji": "neutral"
-      },
-      {
         "Sector": "Mineria",
         "ETF": "XME",
-        "GF_Z": -0.85,
-        "Rot_Z": -0.39,
-        "RVOL": 0.43,
+        "GF_Z": -0.78,
+        "Rot_Z": -0.21,
+        "RVOL": 0.42,
         "Status": "DEBILITANDOSE",
         "Notas": "Perdiendo fuerza relativa.",
         "Emoji": "down"
@@ -271,19 +271,19 @@
       {
         "Sector": "Uranio",
         "ETF": "URA",
-        "GF_Z": -0.98,
-        "Rot_Z": -0.03,
+        "GF_Z": -0.89,
+        "Rot_Z": 0.15,
         "RVOL": 0.69,
-        "Status": "DEBILITANDOSE",
-        "Notas": "Perdiendo fuerza relativa.",
-        "Emoji": "down"
+        "Status": "NEUTRO",
+        "Notas": "Sin senal clara.",
+        "Emoji": "neutral"
       },
       {
         "Sector": "Energia",
         "ETF": "XLE",
-        "GF_Z": -1.08,
-        "Rot_Z": 0.33,
-        "RVOL": 1.0,
+        "GF_Z": -1.02,
+        "Rot_Z": 0.28,
+        "RVOL": 1.02,
         "Status": "NEUTRO",
         "Notas": "Sin senal clara.",
         "Emoji": "neutral"
@@ -291,8 +291,8 @@
       {
         "Sector": "Plata",
         "ETF": "SLV",
-        "GF_Z": -1.16,
-        "Rot_Z": -0.42,
+        "GF_Z": -1.07,
+        "Rot_Z": -0.26,
         "RVOL": 0.66,
         "Status": "DEBILITANDOSE",
         "Notas": "Perdiendo fuerza relativa.",
@@ -301,19 +301,9 @@
       {
         "Sector": "Oro",
         "ETF": "GLD",
-        "GF_Z": -1.63,
-        "Rot_Z": -0.47,
-        "RVOL": 0.72,
-        "Status": "DEBILITANDOSE",
-        "Notas": "Perdiendo fuerza relativa.",
-        "Emoji": "down"
-      },
-      {
-        "Sector": "Agricolas",
-        "ETF": "DBA",
-        "GF_Z": -1.96,
-        "Rot_Z": -0.27,
-        "RVOL": 0.61,
+        "GF_Z": -1.44,
+        "Rot_Z": -0.32,
+        "RVOL": 0.7,
         "Status": "DEBILITANDOSE",
         "Notas": "Perdiendo fuerza relativa.",
         "Emoji": "down"
@@ -321,9 +311,9 @@
       {
         "Sector": "Salud",
         "ETF": "XLV",
-        "GF_Z": -2.15,
-        "Rot_Z": -0.28,
-        "RVOL": 0.81,
+        "GF_Z": -1.88,
+        "Rot_Z": -0.13,
+        "RVOL": 0.88,
         "Status": "DEBILITANDOSE",
         "Notas": "Perdiendo fuerza relativa.",
         "Emoji": "down"
@@ -331,70 +321,69 @@
       {
         "Sector": "Consumo Basico",
         "ETF": "XLP",
-        "GF_Z": -2.93,
-        "Rot_Z": -0.57,
+        "GF_Z": -2.08,
+        "Rot_Z": -0.42,
         "RVOL": 1.09,
         "Status": "DEBILITANDOSE",
         "Notas": "Perdiendo fuerza relativa.",
         "Emoji": "down"
       },
       {
+        "Sector": "Agricolas",
+        "ETF": "DBA",
+        "GF_Z": -2.13,
+        "Rot_Z": -0.34,
+        "RVOL": 0.54,
+        "Status": "REZAGADO",
+        "Notas": "Ultimo del ranking.",
+        "Emoji": "warning"
+      },
+      {
         "Sector": "Crypto",
         "ETF": "BTC-USD",
-        "GF_Z": -3.2,
-        "Rot_Z": 0.29,
-        "RVOL": 0.78,
-        "Status": "DEBILITANDOSE",
-        "Notas": "Perdiendo fuerza relativa.",
-        "Emoji": "down"
+        "GF_Z": -3.12,
+        "Rot_Z": -0.57,
+        "RVOL": 0.74,
+        "Status": "SALIENDO",
+        "Notas": "Salida activa de capital.",
+        "Emoji": "exit"
       }
     ],
-    "timestamp": "2026-09-07T14:05:57.991577"
+    "timestamp": "2026-09-08T12:42:58.693818"
   },
   "pistolero": {
     "stocks": [
       {
-        "ticker": "HEN3.DE",
-        "sector": "Consumer Defensive",
-        "index": "DAX",
-        "score": 0.765,
-        "rsi": 58.8,
-        "accel": 0.0472,
-        "slope": -0.0012,
-        "close": 76.22,
-        "is_favorito": false
-      },
-      {
         "ticker": "BAYN.DE",
         "sector": "Healthcare",
         "index": "DAX",
-        "score": 0.76,
-        "rsi": 50.6,
+        "score": 0.757,
+        "rsi": 51.5,
         "accel": 0.0154,
         "slope": 0.0008,
-        "close": 48.8,
-        "is_favorito": false
-      },
-      {
-        "ticker": "UNI.MC",
-        "sector": "Financial Services",
-        "index": "IBEX35",
-        "score": 0.756,
-        "rsi": 54.7,
-        "accel": -0.0047,
-        "slope": 0.0006,
-        "close": 3.62,
+        "close": 48.89,
         "is_favorito": false
       },
       {
         "ticker": "ELE.MC",
         "sector": "Utilities",
         "index": "IBEX35",
-        "score": 0.746,
-        "rsi": 50.7,
+        "score": 0.748,
+        "rsi": 49.7,
         "accel": 0.0033,
         "slope": 0.0003,
-        "close": 41.4,
+        "close": 41.33,
+        "is_favorito": false
+      },
+      {
+        "ticker": "UNI.MC",
+        "sector": "Financial Services",
+        "index": "IBEX35",
+        "score": 0.736,
+        "rsi": 49.3,
+        "accel": -0.0046,
+        "slope": 0.0006,
+        "close": 3.58,
         "is_favorito": false
       },
       {
@@ -406,17 +395,6 @@
         "accel": -0.0074,
         "slope": 0.0002,
         "close": 72.43,
-        "is_favorito": false
-      },
-      {
-        "ticker": "BNR.DE",
-        "sector": "Basic Materials",
-        "index": "DAX",
-        "score": 0.732,
-        "rsi": 49.4,
-        "accel": 0.0187,
-        "slope": -0.0001,
-        "close": 60.78,
         "is_favorito": false
       },
       {
@@ -434,11 +412,22 @@
         "ticker": "BBVA.MC",
         "sector": "Financial Services",
         "index": "IBEX35",
-        "score": 0.726,
-        "rsi": 58.0,
+        "score": 0.724,
+        "rsi": 57.0,
         "accel": -0.0177,
         "slope": 0.0009,
-        "close": 25.36,
+        "close": 25.31,
+        "is_favorito": false
+      },
+      {
+        "ticker": "BKT.MC",
+        "sector": "Financial Services",
+        "index": "IBEX35",
+        "score": 0.721,
+        "rsi": 50.6,
+        "accel": -0.0131,
+        "slope": 0.0005,
+        "close": 16.75,
         "is_favorito": false
       },
       {
@@ -453,21 +442,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "BKT.MC",
-        "sector": "Financial Services",
-        "index": "IBEX35",
-        "score": 0.72,
-        "rsi": 55.0,
-        "accel": -0.0133,
-        "slope": 0.0005,
-        "close": 16.91,
-        "is_favorito": false
-      },
-      {
         "ticker": "BAX",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.72,
+        "score": 0.719,
         "rsi": 49.0,
         "accel": 0.0318,
         "slope": -0.0037,
@@ -478,7 +456,7 @@
         "ticker": "TRV",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.719,
+        "score": 0.717,
         "rsi": 55.3,
         "accel": 0.0416,
         "slope": -0.001,
@@ -489,40 +467,29 @@
         "ticker": "GRF.MC",
         "sector": "Healthcare",
         "index": "IBEX35",
-        "score": 0.71,
-        "rsi": 50.2,
-        "accel": 0.0335,
+        "score": 0.714,
+        "rsi": 58.0,
+        "accel": 0.0341,
         "slope": -0.0006,
-        "close": 9.76,
+        "close": 9.94,
         "is_favorito": false
       },
       {
-        "ticker": "DHL.DE",
-        "sector": "Industrials",
+        "ticker": "MRK.DE",
+        "sector": "Healthcare",
         "index": "DAX",
-        "score": 0.703,
-        "rsi": 50.6,
-        "accel": -0.0146,
-        "slope": 0.0005,
-        "close": 55.22,
-        "is_favorito": false
-      },
-      {
-        "ticker": "NTGY.MC",
-        "sector": "Utilities",
-        "index": "IBEX35",
-        "score": 0.695,
-        "rsi": 54.6,
-        "accel": -0.0261,
-        "slope": 0.0015,
-        "close": 29.8,
+        "score": 0.711,
+        "rsi": 47.2,
+        "accel": 0.0317,
+        "slope": -0.0005,
+        "close": 136.05,
         "is_favorito": false
       },
       {
         "ticker": "UNH",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.695,
+        "score": 0.694,
         "rsi": 51.3,
         "accel": 0.0276,
         "slope": -0.0012,
@@ -533,7 +500,7 @@
         "ticker": "ACGL",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.693,
+        "score": 0.694,
         "rsi": 51.2,
         "accel": 0.0045,
         "slope": 0.0007,
@@ -541,10 +508,54 @@
         "is_favorito": false
       },
       {
+        "ticker": "NTGY.MC",
+        "sector": "Utilities",
+        "index": "IBEX35",
+        "score": 0.693,
+        "rsi": 46.7,
+        "accel": -0.0257,
+        "slope": 0.0015,
+        "close": 29.44,
+        "is_favorito": false
+      },
+      {
+        "ticker": "DHL.DE",
+        "sector": "Industrials",
+        "index": "DAX",
+        "score": 0.687,
+        "rsi": 53.8,
+        "accel": -0.0147,
+        "slope": 0.0005,
+        "close": 55.54,
+        "is_favorito": false
+      },
+      {
+        "ticker": "BNR.DE",
+        "sector": "Basic Materials",
+        "index": "DAX",
+        "score": 0.686,
+        "rsi": 56.3,
+        "accel": 0.0191,
+        "slope": -0.0001,
+        "close": 61.97,
+        "is_favorito": false
+      },
+      {
+        "ticker": "MAP.MC",
+        "sector": "Financial Services",
+        "index": "IBEX35",
+        "score": 0.684,
+        "rsi": 53.1,
+        "accel": -0.0112,
+        "slope": 0.0015,
+        "close": 4.43,
+        "is_favorito": false
+      },
+      {
         "ticker": "ALL",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.684,
+        "score": 0.682,
         "rsi": 53.1,
         "accel": 0.0528,
         "slope": -0.0007,
@@ -555,33 +566,11 @@
         "ticker": "JPM",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.681,
+        "score": 0.679,
         "rsi": 47.0,
         "accel": -0.0037,
         "slope": -0.0008,
         "close": 358.64,
-        "is_favorito": false
-      },
-      {
-        "ticker": "HNR1.DE",
-        "sector": "Financial Services",
-        "index": "DAX",
-        "score": 0.676,
-        "rsi": 47.3,
-        "accel": -0.0179,
-        "slope": 0.0023,
-        "close": 254.6,
-        "is_favorito": false
-      },
-      {
-        "ticker": "WRB",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.674,
-        "rsi": 46.2,
-        "accel": 0.0517,
-        "slope": -0.0023,
-        "close": 69.14,
         "is_favorito": false
       },
       {
@@ -596,14 +585,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "ALV.DE",
+        "ticker": "WRB",
         "sector": "Financial Services",
-        "index": "DAX",
+        "index": "S&P500",
         "score": 0.672,
-        "rsi": 55.3,
-        "accel": -0.0396,
-        "slope": 0.0021,
-        "close": 447.1,
+        "rsi": 46.2,
+        "accel": 0.0517,
+        "slope": -0.0023,
+        "close": 69.14,
         "is_favorito": false
       },
       {
@@ -621,7 +610,7 @@
         "ticker": "CINF",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.667,
+        "score": 0.669,
         "rsi": 50.1,
         "accel": 0.0393,
         "slope": -0.0007,
@@ -632,11 +621,22 @@
         "ticker": "TROW",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.666,
+        "score": 0.665,
         "rsi": 46.9,
         "accel": 0.0207,
         "slope": -0.0011,
         "close": 109.78,
+        "is_favorito": false
+      },
+      {
+        "ticker": "RWE.DE",
+        "sector": "Utilities",
+        "index": "DAX",
+        "score": 0.664,
+        "rsi": 59.1,
+        "accel": -0.0436,
+        "slope": 0.0006,
+        "close": 59.38,
         "is_favorito": false
       },
       {
@@ -651,6 +651,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "ALV.DE",
+        "sector": "Financial Services",
+        "index": "DAX",
+        "score": 0.663,
+        "rsi": 53.1,
+        "accel": -0.0394,
+        "slope": 0.0021,
+        "close": 445.1,
+        "is_favorito": false
+      },
+      {
         "ticker": "VLTO",
         "sector": "Industrials",
         "index": "S&P500",
@@ -662,21 +673,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "HSIC",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.657,
-        "rsi": 51.6,
-        "accel": -0.0147,
-        "slope": 0.0006,
-        "close": 89.81,
-        "is_favorito": false
-      },
-      {
         "ticker": "KO",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.656,
+        "score": 0.655,
         "rsi": 54.6,
         "accel": -0.0318,
         "slope": 0.0016,
@@ -684,10 +684,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "DGX",
+        "ticker": "HSIC",
         "sector": "Healthcare",
         "index": "S&P500",
         "score": 0.655,
+        "rsi": 51.6,
+        "accel": -0.0147,
+        "slope": 0.0006,
+        "close": 89.81,
+        "is_favorito": false
+      },
+      {
+        "ticker": "DGX",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.654,
         "rsi": 52.8,
         "accel": -0.0174,
         "slope": 0.0012,
@@ -698,7 +709,7 @@
         "ticker": "AIZ",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.654,
+        "score": 0.653,
         "rsi": 58.0,
         "accel": 0.0364,
         "slope": 0.0004,
@@ -717,14 +728,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "REP.MC",
-        "sector": "Energy",
+        "ticker": "CABK.MC",
+        "sector": "Financial Services",
         "index": "IBEX35",
-        "score": 0.651,
-        "rsi": 57.1,
-        "accel": -0.0809,
-        "slope": 0.0029,
-        "close": 28.29,
+        "score": 0.652,
+        "rsi": 59.4,
+        "accel": -0.0268,
+        "slope": 0.0021,
+        "close": 13.3,
         "is_favorito": false
       },
       {
@@ -750,6 +761,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "REP.MC",
+        "sector": "Energy",
+        "index": "IBEX35",
+        "score": 0.644,
+        "rsi": 55.9,
+        "accel": -0.0877,
+        "slope": 0.0026,
+        "close": 28.07,
+        "is_favorito": false
+      },
+      {
         "ticker": "CPAY",
         "sector": "Technology",
         "index": "S&P500",
@@ -764,11 +786,22 @@
         "ticker": "CB",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.64,
+        "score": 0.642,
         "rsi": 50.8,
         "accel": 0.0401,
         "slope": -0.001,
         "close": 341.59,
+        "is_favorito": false
+      },
+      {
+        "ticker": "ITX.MC",
+        "sector": "Consumer Cyclical",
+        "index": "IBEX35",
+        "score": 0.64,
+        "rsi": 49.5,
+        "accel": 0.0111,
+        "slope": -0.0009,
+        "close": 56.98,
         "is_favorito": false
       },
       {
@@ -783,17 +816,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "ITX.MC",
-        "sector": "Consumer Cyclical",
-        "index": "IBEX35",
-        "score": 0.639,
-        "rsi": 52.5,
-        "accel": 0.0111,
-        "slope": -0.0009,
-        "close": 57.44,
-        "is_favorito": false
-      },
-      {
         "ticker": "FRT",
         "sector": "Real Estate",
         "index": "S&P500",
@@ -805,10 +827,21 @@
         "is_favorito": false
       },
       {
+        "ticker": "SHL.DE",
+        "sector": "Healthcare",
+        "index": "DAX",
+        "score": 0.638,
+        "rsi": 43.5,
+        "accel": 0.0096,
+        "slope": -0.0002,
+        "close": 38.9,
+        "is_favorito": false
+      },
+      {
         "ticker": "KIM",
         "sector": "Real Estate",
         "index": "S&P500",
-        "score": 0.639,
+        "score": 0.638,
         "rsi": 37.4,
         "accel": 0.0267,
         "slope": -0.0009,
@@ -816,21 +849,32 @@
         "is_favorito": false
       },
       {
-        "ticker": "MUV2.DE",
-        "sector": "Financial Services",
+        "ticker": "BEI.DE",
+        "sector": "Consumer Defensive",
         "index": "DAX",
         "score": 0.637,
-        "rsi": 40.6,
-        "accel": -0.0065,
-        "slope": 0.001,
-        "close": 514.2,
+        "rsi": 49.8,
+        "accel": 0.0249,
+        "slope": -0.0006,
+        "close": 76.96,
         "is_favorito": false
+      },
+      {
+        "ticker": "DELL",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.636,
+        "rsi": 59.0,
+        "accel": -0.0488,
+        "slope": 0.0006,
+        "close": 524.14,
+        "is_favorito": true
       },
       {
         "ticker": "PAYX",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.637,
+        "score": 0.636,
         "rsi": 58.4,
         "accel": -0.0551,
         "slope": 0.0027,
@@ -838,21 +882,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "ETR",
-        "sector": "Utilities",
-        "index": "S&P500",
-        "score": 0.636,
-        "rsi": 44.4,
-        "accel": 0.001,
-        "slope": 0.0,
-        "close": 107.27,
-        "is_favorito": false
-      },
-      {
         "ticker": "KHC",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.636,
+        "score": 0.635,
         "rsi": 55.4,
         "accel": -0.0291,
         "slope": 0.0018,
@@ -863,7 +896,7 @@
         "ticker": "RJF",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.636,
+        "score": 0.635,
         "rsi": 48.3,
         "accel": -0.0002,
         "slope": -0.0009,
@@ -871,25 +904,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "DELL",
-        "sector": "Technology",
+        "ticker": "ETR",
+        "sector": "Utilities",
         "index": "S&P500",
-        "score": 0.635,
-        "rsi": 59.0,
-        "accel": -0.0488,
-        "slope": 0.0006,
-        "close": 524.14,
-        "is_favorito": true
-      },
-      {
-        "ticker": "MEL.MC",
-        "sector": "Consumer Cyclical",
-        "index": "IBEX35",
-        "score": 0.632,
-        "rsi": 52.2,
-        "accel": 0.0149,
-        "slope": -0.001,
-        "close": 10.11,
+        "score": 0.634,
+        "rsi": 44.4,
+        "accel": 0.001,
+        "slope": 0.0,
+        "close": 107.27,
         "is_favorito": false
       },
       {
@@ -904,6 +926,28 @@
         "is_favorito": false
       },
       {
+        "ticker": "MEL.MC",
+        "sector": "Consumer Cyclical",
+        "index": "IBEX35",
+        "score": 0.629,
+        "rsi": 47.1,
+        "accel": 0.0147,
+        "slope": -0.001,
+        "close": 9.97,
+        "is_favorito": false
+      },
+      {
+        "ticker": "G1A.DE",
+        "sector": "Industrials",
+        "index": "DAX",
+        "score": 0.629,
+        "rsi": 50.3,
+        "accel": -0.0513,
+        "slope": 0.0013,
+        "close": 64.75,
+        "is_favorito": false
+      },
+      {
         "ticker": "ESS",
         "sector": "Real Estate",
         "index": "S&P500",
@@ -912,28 +956,6 @@
         "accel": 0.0037,
         "slope": -0.0008,
         "close": 278.61,
-        "is_favorito": false
-      },
-      {
-        "ticker": "GWW",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.625,
-        "rsi": 51.8,
-        "accel": -0.0208,
-        "slope": 0.0004,
-        "close": 1324.49,
-        "is_favorito": false
-      },
-      {
-        "ticker": "G1A.DE",
-        "sector": "Industrials",
-        "index": "DAX",
-        "score": 0.625,
-        "rsi": 51.0,
-        "accel": -0.0514,
-        "slope": 0.0013,
-        "close": 64.85,
         "is_favorito": false
       },
       {
@@ -959,10 +981,21 @@
         "is_favorito": false
       },
       {
+        "ticker": "GWW",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.624,
+        "rsi": 51.8,
+        "accel": -0.0208,
+        "slope": 0.0004,
+        "close": 1324.49,
+        "is_favorito": false
+      },
+      {
         "ticker": "ZBH",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.624,
+        "score": 0.623,
         "rsi": 49.6,
         "accel": -0.0372,
         "slope": 0.0013,
@@ -981,47 +1014,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "EOG",
-        "sector": "Energy",
+        "ticker": "C",
+        "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.623,
+        "score": 0.621,
         "rsi": 48.2,
-        "accel": -0.0532,
-        "slope": 0.0023,
-        "close": 145.19,
-        "is_favorito": false
-      },
-      {
-        "ticker": "DTE.DE",
-        "sector": "Communication Services",
-        "index": "DAX",
-        "score": 0.622,
-        "rsi": 40.1,
-        "accel": 0.0226,
-        "slope": 0.0002,
-        "close": 28.17,
+        "accel": 0.0071,
+        "slope": -0.0015,
+        "close": 137.72,
         "is_favorito": false
       },
       {
         "ticker": "OTIS",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.622,
+        "score": 0.621,
         "rsi": 54.0,
         "accel": 0.0223,
         "slope": -0.0013,
         "close": 71.21,
-        "is_favorito": false
-      },
-      {
-        "ticker": "AZO",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.622,
-        "rsi": 46.4,
-        "accel": 0.0353,
-        "slope": -0.0024,
-        "close": 2983.29,
         "is_favorito": false
       },
       {
@@ -1036,25 +1047,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "IAG.MC",
-        "sector": "Industrials",
-        "index": "IBEX35",
-        "score": 0.621,
-        "rsi": 52.5,
-        "accel": 0.0288,
-        "slope": -0.0017,
-        "close": 5.02,
-        "is_favorito": false
-      },
-      {
-        "ticker": "C",
-        "sector": "Financial Services",
+        "ticker": "AZO",
+        "sector": "Consumer Cyclical",
         "index": "S&P500",
         "score": 0.621,
-        "rsi": 48.2,
-        "accel": 0.0071,
-        "slope": -0.0015,
-        "close": 137.72,
+        "rsi": 46.4,
+        "accel": 0.0353,
+        "slope": -0.0024,
+        "close": 2983.29,
         "is_favorito": false
       },
       {
@@ -1066,6 +1066,28 @@
         "accel": 0.025,
         "slope": -0.0031,
         "close": 72.7,
+        "is_favorito": false
+      },
+      {
+        "ticker": "EOG",
+        "sector": "Energy",
+        "index": "S&P500",
+        "score": 0.62,
+        "rsi": 48.2,
+        "accel": -0.0532,
+        "slope": 0.0023,
+        "close": 145.19,
+        "is_favorito": false
+      },
+      {
+        "ticker": "AMS.MC",
+        "sector": "Technology",
+        "index": "IBEX35",
+        "score": 0.62,
+        "rsi": 48.5,
+        "accel": -0.0121,
+        "slope": 0.0003,
+        "close": 56.22,
         "is_favorito": false
       },
       {
@@ -1091,21 +1113,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "WELL",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.616,
-        "rsi": 51.7,
-        "accel": -0.0125,
-        "slope": 0.002,
-        "close": 236.17,
-        "is_favorito": false
-      },
-      {
         "ticker": "NVR",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.615,
+        "score": 0.616,
         "rsi": 50.0,
         "accel": -0.0143,
         "slope": 0.0,
@@ -1113,10 +1124,43 @@
         "is_favorito": false
       },
       {
+        "ticker": "WELL",
+        "sector": "Real Estate",
+        "index": "S&P500",
+        "score": 0.615,
+        "rsi": 51.7,
+        "accel": -0.0125,
+        "slope": 0.002,
+        "close": 236.17,
+        "is_favorito": false
+      },
+      {
+        "ticker": "IAG.MC",
+        "sector": "Industrials",
+        "index": "IBEX35",
+        "score": 0.615,
+        "rsi": 48.7,
+        "accel": 0.0284,
+        "slope": -0.0017,
+        "close": 4.96,
+        "is_favorito": false
+      },
+      {
+        "ticker": "DTE.DE",
+        "sector": "Communication Services",
+        "index": "DAX",
+        "score": 0.614,
+        "rsi": 44.5,
+        "accel": 0.0228,
+        "slope": 0.0002,
+        "close": 28.49,
+        "is_favorito": false
+      },
+      {
         "ticker": "CHD",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.615,
+        "score": 0.614,
         "rsi": 52.3,
         "accel": 0.0169,
         "slope": -0.001,
@@ -1124,21 +1168,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "ED",
-        "sector": "Utilities",
-        "index": "S&P500",
-        "score": 0.614,
-        "rsi": 46.5,
-        "accel": 0.0053,
-        "slope": 0.0005,
-        "close": 107.29,
-        "is_favorito": false
-      },
-      {
         "ticker": "D",
         "sector": "Utilities",
         "index": "S&P500",
-        "score": 0.612,
+        "score": 0.613,
         "rsi": 31.3,
         "accel": 0.019,
         "slope": -0.0018,
@@ -1146,14 +1179,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "BF-B",
-        "sector": "Consumer Defensive",
+        "ticker": "ED",
+        "sector": "Utilities",
         "index": "S&P500",
         "score": 0.612,
-        "rsi": 45.3,
-        "accel": 0.0368,
-        "slope": -0.0022,
-        "close": 26.73,
+        "rsi": 46.5,
+        "accel": 0.0053,
+        "slope": 0.0005,
+        "close": 107.29,
         "is_favorito": false
       },
       {
@@ -1168,36 +1201,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "AVY",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
+        "ticker": "HEN3.DE",
+        "sector": "Consumer Defensive",
+        "index": "DAX",
         "score": 0.611,
-        "rsi": 49.1,
-        "accel": -0.0214,
+        "rsi": 62.5,
+        "accel": 0.0476,
         "slope": -0.0012,
-        "close": 175.06,
+        "close": 76.74,
         "is_favorito": false
       },
       {
-        "ticker": "SCHW",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.61,
-        "rsi": 46.7,
-        "accel": -0.026,
-        "slope": 0.0005,
-        "close": 109.29,
-        "is_favorito": false
-      },
-      {
-        "ticker": "F",
+        "ticker": "BBY",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
         "score": 0.61,
-        "rsi": 58.8,
-        "accel": -0.0184,
-        "slope": 0.0005,
-        "close": 14.62,
+        "rsi": 57.9,
+        "accel": -0.0331,
+        "slope": 0.0007,
+        "close": 90.27,
         "is_favorito": false
       },
       {
@@ -1212,14 +1234,69 @@
         "is_favorito": false
       },
       {
-        "ticker": "BBY",
+        "ticker": "BF-B",
+        "sector": "Consumer Defensive",
+        "index": "S&P500",
+        "score": 0.61,
+        "rsi": 45.3,
+        "accel": 0.0368,
+        "slope": -0.0022,
+        "close": 26.73,
+        "is_favorito": false
+      },
+      {
+        "ticker": "AVY",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
+        "score": 0.61,
+        "rsi": 49.1,
+        "accel": -0.0214,
+        "slope": -0.0012,
+        "close": 175.06,
+        "is_favorito": false
+      },
+      {
+        "ticker": "F",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.61,
+        "rsi": 58.8,
+        "accel": -0.0184,
+        "slope": 0.0005,
+        "close": 14.62,
+        "is_favorito": false
+      },
+      {
+        "ticker": "SCHW",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.61,
+        "rsi": 46.7,
+        "accel": -0.026,
+        "slope": 0.0005,
+        "close": 109.29,
+        "is_favorito": false
+      },
+      {
+        "ticker": "SCYR.MC",
+        "sector": "Industrials",
+        "index": "IBEX35",
         "score": 0.609,
-        "rsi": 57.9,
-        "accel": -0.0331,
-        "slope": 0.0007,
-        "close": 90.27,
+        "rsi": 41.4,
+        "accel": 0.0755,
+        "slope": -0.0043,
+        "close": 4.33,
+        "is_favorito": false
+      },
+      {
+        "ticker": "HNR1.DE",
+        "sector": "Financial Services",
+        "index": "DAX",
+        "score": 0.608,
+        "rsi": 41.4,
+        "accel": -0.0176,
+        "slope": 0.0023,
+        "close": 250.4,
         "is_favorito": false
       },
       {
@@ -1231,28 +1308,6 @@
         "accel": 0.0523,
         "slope": -0.0043,
         "close": 239.84,
-        "is_favorito": false
-      },
-      {
-        "ticker": "PEG",
-        "sector": "Utilities",
-        "index": "S&P500",
-        "score": 0.607,
-        "rsi": 36.0,
-        "accel": 0.0248,
-        "slope": -0.002,
-        "close": 73.7,
-        "is_favorito": false
-      },
-      {
-        "ticker": "GL",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.607,
-        "rsi": 40.1,
-        "accel": 0.0717,
-        "slope": -0.003,
-        "close": 174.27,
         "is_favorito": false
       },
       {
@@ -1278,6 +1333,28 @@
         "is_favorito": false
       },
       {
+        "ticker": "PEG",
+        "sector": "Utilities",
+        "index": "S&P500",
+        "score": 0.606,
+        "rsi": 36.0,
+        "accel": 0.0248,
+        "slope": -0.002,
+        "close": 73.7,
+        "is_favorito": false
+      },
+      {
+        "ticker": "GL",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.605,
+        "rsi": 40.1,
+        "accel": 0.0717,
+        "slope": -0.003,
+        "close": 174.27,
+        "is_favorito": false
+      },
+      {
         "ticker": "MS",
         "sector": "Financial Services",
         "index": "S&P500",
@@ -1286,28 +1363,6 @@
         "accel": -0.0048,
         "slope": -0.0009,
         "close": 217.72,
-        "is_favorito": false
-      },
-      {
-        "ticker": "ERIE",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.604,
-        "rsi": 54.3,
-        "accel": -0.0242,
-        "slope": 0.001,
-        "close": 252.8,
-        "is_favorito": false
-      },
-      {
-        "ticker": "SWK",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.603,
-        "rsi": 43.2,
-        "accel": 0.0319,
-        "slope": -0.0041,
-        "close": 97.36,
         "is_favorito": false
       },
       {
@@ -1322,21 +1377,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "EVRG",
-        "sector": "Utilities",
-        "index": "S&P500",
-        "score": 0.603,
-        "rsi": 40.7,
-        "accel": 0.0207,
-        "slope": -0.001,
-        "close": 81.54,
-        "is_favorito": false
-      },
-      {
         "ticker": "CFG",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.602,
+        "score": 0.603,
         "rsi": 34.3,
         "accel": 0.0381,
         "slope": -0.0038,
@@ -1344,25 +1388,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "REG",
-        "sector": "Real Estate",
+        "ticker": "EVRG",
+        "sector": "Utilities",
         "index": "S&P500",
         "score": 0.602,
         "rsi": 40.7,
-        "accel": 0.0186,
-        "slope": -0.0006,
-        "close": 75.26,
-        "is_favorito": false
-      },
-      {
-        "ticker": "ROST",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.602,
-        "rsi": 44.0,
-        "accel": 0.1022,
-        "slope": -0.0054,
-        "close": 230.69,
+        "accel": 0.0207,
+        "slope": -0.001,
+        "close": 81.54,
         "is_favorito": false
       },
       {
@@ -1377,14 +1410,47 @@
         "is_favorito": false
       },
       {
-        "ticker": "XOM",
-        "sector": "Energy",
+        "ticker": "ROST",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.602,
+        "rsi": 44.0,
+        "accel": 0.1022,
+        "slope": -0.0054,
+        "close": 230.69,
+        "is_favorito": false
+      },
+      {
+        "ticker": "SWK",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.602,
+        "rsi": 43.2,
+        "accel": 0.0319,
+        "slope": -0.0041,
+        "close": 97.36,
+        "is_favorito": false
+      },
+      {
+        "ticker": "REG",
+        "sector": "Real Estate",
         "index": "S&P500",
         "score": 0.601,
-        "rsi": 46.6,
-        "accel": -0.019,
-        "slope": 0.0015,
-        "close": 159.47,
+        "rsi": 40.7,
+        "accel": 0.0186,
+        "slope": -0.0006,
+        "close": 75.26,
+        "is_favorito": false
+      },
+      {
+        "ticker": "ERIE",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.6,
+        "rsi": 54.3,
+        "accel": -0.0242,
+        "slope": 0.001,
+        "close": 252.8,
         "is_favorito": false
       },
       {
@@ -1399,14 +1465,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "CTAS",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.599,
-        "rsi": 55.4,
-        "accel": -0.0124,
-        "slope": 0.0,
-        "close": 200.47,
+        "ticker": "FME.DE",
+        "sector": "Healthcare",
+        "index": "DAX",
+        "score": 0.6,
+        "rsi": 34.5,
+        "accel": 0.0619,
+        "slope": -0.0035,
+        "close": 39.47,
         "is_favorito": false
       },
       {
@@ -1421,14 +1487,36 @@
         "is_favorito": false
       },
       {
-        "ticker": "HIG",
-        "sector": "Financial Services",
+        "ticker": "CTAS",
+        "sector": "Industrials",
         "index": "S&P500",
         "score": 0.599,
+        "rsi": 55.4,
+        "accel": -0.0124,
+        "slope": 0.0,
+        "close": 200.47,
+        "is_favorito": false
+      },
+      {
+        "ticker": "DTG.DE",
+        "sector": "Industrials",
+        "index": "DAX",
+        "score": 0.599,
         "rsi": 55.9,
-        "accel": 0.0414,
-        "slope": -0.0005,
-        "close": 138.37,
+        "accel": -0.0015,
+        "slope": 0.0005,
+        "close": 45.56,
+        "is_favorito": false
+      },
+      {
+        "ticker": "XOM",
+        "sector": "Energy",
+        "index": "S&P500",
+        "score": 0.599,
+        "rsi": 46.6,
+        "accel": -0.019,
+        "slope": 0.0015,
+        "close": 159.47,
         "is_favorito": false
       },
       {
@@ -1436,32 +1524,43 @@
         "sector": "Consumer Cyclical",
         "index": "IBEX35",
         "score": 0.598,
-        "rsi": 50.9,
-        "accel": 0.0439,
+        "rsi": 52.6,
+        "accel": 0.0441,
         "slope": -0.002,
-        "close": 18.9,
+        "close": 18.97,
         "is_favorito": false
       },
       {
-        "ticker": "DTG.DE",
-        "sector": "Industrials",
+        "ticker": "IFX.DE",
+        "sector": "Technology",
         "index": "DAX",
         "score": 0.598,
-        "rsi": 56.9,
-        "accel": -0.0015,
-        "slope": 0.0005,
-        "close": 45.65,
+        "rsi": 54.0,
+        "accel": 0.0965,
+        "slope": -0.007,
+        "close": 58.26,
         "is_favorito": false
       },
       {
-        "ticker": "TEF.MC",
-        "sector": "Communication Services",
-        "index": "IBEX35",
-        "score": 0.596,
-        "rsi": 43.7,
-        "accel": 0.0054,
-        "slope": -0.0002,
-        "close": 3.63,
+        "ticker": "HIG",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.598,
+        "rsi": 55.9,
+        "accel": 0.0414,
+        "slope": -0.0005,
+        "close": 138.37,
+        "is_favorito": false
+      },
+      {
+        "ticker": "APD",
+        "sector": "Basic Materials",
+        "index": "S&P500",
+        "score": 0.598,
+        "rsi": 50.5,
+        "accel": -0.0266,
+        "slope": 0.0002,
+        "close": 301.27,
         "is_favorito": false
       },
       {
@@ -1476,21 +1575,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "APD",
-        "sector": "Basic Materials",
-        "index": "S&P500",
-        "score": 0.596,
-        "rsi": 50.5,
-        "accel": -0.0266,
-        "slope": 0.0002,
-        "close": 301.27,
-        "is_favorito": false
-      },
-      {
         "ticker": "NVDA",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.595,
+        "score": 0.596,
         "rsi": 53.7,
         "accel": 0.007,
         "slope": -0.0002,
@@ -1509,43 +1597,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "FE",
-        "sector": "Utilities",
-        "index": "S&P500",
-        "score": 0.594,
-        "rsi": 42.9,
-        "accel": 0.0223,
-        "slope": -0.0012,
-        "close": 46.77,
-        "is_favorito": false
-      },
-      {
-        "ticker": "DB1.DE",
-        "sector": "Financial Services",
-        "index": "DAX",
-        "score": 0.593,
-        "rsi": 49.9,
-        "accel": -0.0491,
-        "slope": 0.0026,
-        "close": 279.1,
-        "is_favorito": false
-      },
-      {
-        "ticker": "BRO",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.593,
-        "rsi": 59.2,
-        "accel": -0.0315,
-        "slope": 0.0015,
-        "close": 71.42,
-        "is_favorito": false
-      },
-      {
         "ticker": "MU",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.593,
+        "score": 0.594,
         "rsi": 50.7,
         "accel": -0.0635,
         "slope": 0.0029,
@@ -1553,25 +1608,25 @@
         "is_favorito": true
       },
       {
-        "ticker": "PPG",
-        "sector": "Basic Materials",
-        "index": "S&P500",
-        "score": 0.592,
-        "rsi": 47.2,
-        "accel": 0.0187,
-        "slope": -0.0024,
-        "close": 112.53,
+        "ticker": "EOAN.DE",
+        "sector": "Utilities",
+        "index": "DAX",
+        "score": 0.593,
+        "rsi": 50.3,
+        "accel": 0.0636,
+        "slope": -0.0026,
+        "close": 17.57,
         "is_favorito": false
       },
       {
-        "ticker": "DPZ",
-        "sector": "Consumer Cyclical",
+        "ticker": "BRO",
+        "sector": "Financial Services",
         "index": "S&P500",
         "score": 0.592,
-        "rsi": 53.7,
-        "accel": 0.0229,
-        "slope": -0.001,
-        "close": 341.08,
+        "rsi": 59.2,
+        "accel": -0.0315,
+        "slope": 0.0015,
+        "close": 71.42,
         "is_favorito": false
       },
       {
@@ -1586,6 +1641,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "FE",
+        "sector": "Utilities",
+        "index": "S&P500",
+        "score": 0.592,
+        "rsi": 42.9,
+        "accel": 0.0223,
+        "slope": -0.0012,
+        "close": 46.77,
+        "is_favorito": false
+      },
+      {
         "ticker": "OKE",
         "sector": "Energy",
         "index": "S&P500",
@@ -1597,14 +1663,36 @@
         "is_favorito": false
       },
       {
-        "ticker": "ARES",
-        "sector": "Financial Services",
+        "ticker": "EXPD",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.591,
+        "rsi": 51.8,
+        "accel": -0.0687,
+        "slope": 0.0025,
+        "close": 188.8,
+        "is_favorito": false
+      },
+      {
+        "ticker": "TEF.MC",
+        "sector": "Communication Services",
+        "index": "IBEX35",
+        "score": 0.59,
+        "rsi": 42.7,
+        "accel": 0.0054,
+        "slope": -0.0002,
+        "close": 3.62,
+        "is_favorito": false
+      },
+      {
+        "ticker": "DPZ",
+        "sector": "Consumer Cyclical",
         "index": "S&P500",
         "score": 0.59,
-        "rsi": 47.5,
-        "accel": -0.031,
-        "slope": -0.0002,
-        "close": 140.15,
+        "rsi": 53.7,
+        "accel": 0.0229,
+        "slope": -0.001,
+        "close": 341.08,
         "is_favorito": false
       },
       {
@@ -1619,25 +1707,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "EXPD",
-        "sector": "Industrials",
+        "ticker": "PPG",
+        "sector": "Basic Materials",
         "index": "S&P500",
         "score": 0.59,
-        "rsi": 51.8,
-        "accel": -0.0687,
-        "slope": 0.0025,
-        "close": 188.8,
-        "is_favorito": false
-      },
-      {
-        "ticker": "LH",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.59,
-        "rsi": 55.3,
-        "accel": -0.0595,
-        "slope": 0.0026,
-        "close": 326.89,
+        "rsi": 47.2,
+        "accel": 0.0187,
+        "slope": -0.0024,
+        "close": 112.53,
         "is_favorito": false
       },
       {
@@ -1652,10 +1729,43 @@
         "is_favorito": false
       },
       {
+        "ticker": "ARES",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.59,
+        "rsi": 47.5,
+        "accel": -0.031,
+        "slope": -0.0002,
+        "close": 140.15,
+        "is_favorito": false
+      },
+      {
+        "ticker": "LH",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.59,
+        "rsi": 55.3,
+        "accel": -0.0595,
+        "slope": 0.0026,
+        "close": 326.89,
+        "is_favorito": false
+      },
+      {
+        "ticker": "SAB.MC",
+        "sector": "Financial Services",
+        "index": "IBEX35",
+        "score": 0.589,
+        "rsi": 56.7,
+        "accel": -0.0554,
+        "slope": 0.0018,
+        "close": 3.71,
+        "is_favorito": false
+      },
+      {
         "ticker": "REGN",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.589,
+        "score": 0.588,
         "rsi": 56.0,
         "accel": -0.0311,
         "slope": 0.0022,
@@ -1663,36 +1773,36 @@
         "is_favorito": false
       },
       {
-        "ticker": "WY",
+        "ticker": "DB1.DE",
+        "sector": "Financial Services",
+        "index": "DAX",
+        "score": 0.588,
+        "rsi": 51.1,
+        "accel": -0.0493,
+        "slope": 0.0026,
+        "close": 280.0,
+        "is_favorito": false
+      },
+      {
+        "ticker": "CPT",
         "sector": "Real Estate",
         "index": "S&P500",
         "score": 0.588,
-        "rsi": 37.3,
-        "accel": 0.0699,
-        "slope": -0.0045,
-        "close": 23.02,
+        "rsi": 36.7,
+        "accel": 0.0394,
+        "slope": -0.0023,
+        "close": 105.69,
         "is_favorito": false
       },
       {
-        "ticker": "BDX",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.588,
-        "rsi": 55.4,
-        "accel": -0.0685,
-        "slope": 0.0029,
-        "close": 184.74,
-        "is_favorito": false
-      },
-      {
-        "ticker": "PCAR",
-        "sector": "Industrials",
-        "index": "S&P500",
+        "ticker": "ENG.MC",
+        "sector": "Utilities",
+        "index": "IBEX35",
         "score": 0.587,
-        "rsi": 33.3,
-        "accel": 0.0481,
-        "slope": -0.0037,
-        "close": 124.7,
+        "rsi": 37.7,
+        "accel": -0.0006,
+        "slope": -0.0005,
+        "close": 16.54,
         "is_favorito": false
       },
       {
@@ -1707,14 +1817,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "CPT",
+        "ticker": "WY",
         "sector": "Real Estate",
         "index": "S&P500",
         "score": 0.587,
-        "rsi": 36.7,
-        "accel": 0.0394,
-        "slope": -0.0023,
-        "close": 105.69,
+        "rsi": 37.3,
+        "accel": 0.0699,
+        "slope": -0.0045,
+        "close": 23.02,
         "is_favorito": false
       },
       {
@@ -1729,21 +1839,32 @@
         "is_favorito": false
       },
       {
-        "ticker": "ENG.MC",
-        "sector": "Utilities",
-        "index": "IBEX35",
-        "score": 0.585,
-        "rsi": 38.6,
-        "accel": -0.0006,
-        "slope": -0.0005,
-        "close": 16.57,
+        "ticker": "BDX",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.586,
+        "rsi": 55.4,
+        "accel": -0.0685,
+        "slope": 0.0029,
+        "close": 184.74,
+        "is_favorito": false
+      },
+      {
+        "ticker": "PCAR",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.586,
+        "rsi": 33.3,
+        "accel": 0.0481,
+        "slope": -0.0037,
+        "close": 124.7,
         "is_favorito": false
       },
       {
         "ticker": "EW",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.585,
+        "score": 0.586,
         "rsi": 44.3,
         "accel": -0.0099,
         "slope": -0.0012,
@@ -1754,22 +1875,11 @@
         "ticker": "ROL",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.585,
+        "score": 0.586,
         "rsi": 48.4,
         "accel": 0.0073,
         "slope": -0.0015,
         "close": 35.86,
-        "is_favorito": false
-      },
-      {
-        "ticker": "SCYR.MC",
-        "sector": "Industrials",
-        "index": "IBEX35",
-        "score": 0.585,
-        "rsi": 39.0,
-        "accel": 0.075,
-        "slope": -0.0043,
-        "close": 4.3,
         "is_favorito": false
       },
       {
@@ -1787,7 +1897,7 @@
         "ticker": "FFIV",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.583,
+        "score": 0.582,
         "rsi": 47.7,
         "accel": 0.0451,
         "slope": -0.0022,
@@ -1795,32 +1905,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "EOAN.DE",
-        "sector": "Utilities",
-        "index": "DAX",
-        "score": 0.582,
-        "rsi": 52.9,
-        "accel": 0.064,
-        "slope": -0.0026,
-        "close": 17.68,
-        "is_favorito": false
-      },
-      {
-        "ticker": "LOG.MC",
-        "sector": "Industrials",
-        "index": "IBEX35",
-        "score": 0.581,
-        "rsi": 44.2,
-        "accel": -0.0003,
-        "slope": -0.0003,
-        "close": 35.22,
-        "is_favorito": false
-      },
-      {
         "ticker": "NKE",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.581,
+        "score": 0.582,
         "rsi": 48.4,
         "accel": 0.056,
         "slope": -0.004,
@@ -1828,25 +1916,25 @@
         "is_favorito": false
       },
       {
+        "ticker": "LOG.MC",
+        "sector": "Industrials",
+        "index": "IBEX35",
+        "score": 0.58,
+        "rsi": 44.9,
+        "accel": -0.0003,
+        "slope": -0.0003,
+        "close": 35.26,
+        "is_favorito": false
+      },
+      {
         "ticker": "BKR",
         "sector": "Energy",
         "index": "S&P500",
-        "score": 0.58,
+        "score": 0.579,
         "rsi": 40.1,
         "accel": 0.0018,
         "slope": -0.0006,
         "close": 63.5,
-        "is_favorito": false
-      },
-      {
-        "ticker": "LIN",
-        "sector": "Basic Materials",
-        "index": "S&P500",
-        "score": 0.579,
-        "rsi": 55.6,
-        "accel": 0.0012,
-        "slope": 0.0003,
-        "close": 477.57,
         "is_favorito": false
       },
       {
@@ -1861,39 +1949,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "TFC",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.578,
-        "rsi": 44.1,
-        "accel": 0.0323,
-        "slope": -0.0023,
-        "close": 51.65,
-        "is_favorito": false
-      },
-      {
-        "ticker": "NEE",
-        "sector": "Utilities",
-        "index": "S&P500",
-        "score": 0.578,
-        "rsi": 36.1,
-        "accel": 0.0258,
-        "slope": -0.0016,
-        "close": 83.43,
-        "is_favorito": false
-      },
-      {
-        "ticker": "RED.MC",
-        "sector": "Utilities",
-        "index": "IBEX35",
-        "score": 0.578,
-        "rsi": 38.9,
-        "accel": 0.012,
-        "slope": -0.0009,
-        "close": 14.91,
-        "is_favorito": false
-      },
-      {
         "ticker": "ABBV",
         "sector": "Healthcare",
         "index": "S&P500",
@@ -1905,10 +1960,43 @@
         "is_favorito": false
       },
       {
+        "ticker": "TFC",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.578,
+        "rsi": 44.1,
+        "accel": 0.0323,
+        "slope": -0.0023,
+        "close": 51.65,
+        "is_favorito": false
+      },
+      {
+        "ticker": "IBE.MC",
+        "sector": "Utilities",
+        "index": "IBEX35",
+        "score": 0.578,
+        "rsi": 36.9,
+        "accel": 0.0295,
+        "slope": -0.0018,
+        "close": 19.76,
+        "is_favorito": false
+      },
+      {
+        "ticker": "LIN",
+        "sector": "Basic Materials",
+        "index": "S&P500",
+        "score": 0.578,
+        "rsi": 55.6,
+        "accel": 0.0012,
+        "slope": 0.0003,
+        "close": 477.57,
+        "is_favorito": false
+      },
+      {
         "ticker": "APH",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.577,
+        "score": 0.578,
         "rsi": 44.3,
         "accel": 0.0792,
         "slope": -0.003,
@@ -1916,10 +2004,21 @@
         "is_favorito": false
       },
       {
+        "ticker": "NEE",
+        "sector": "Utilities",
+        "index": "S&P500",
+        "score": 0.576,
+        "rsi": 36.1,
+        "accel": 0.0258,
+        "slope": -0.0016,
+        "close": 83.43,
+        "is_favorito": false
+      },
+      {
         "ticker": "DLR",
         "sector": "Real Estate",
         "index": "S&P500",
-        "score": 0.576,
+        "score": 0.575,
         "rsi": 35.9,
         "accel": 0.0374,
         "slope": -0.003,
@@ -1927,25 +2026,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "IBE.MC",
-        "sector": "Utilities",
-        "index": "IBEX35",
-        "score": 0.576,
-        "rsi": 38.2,
-        "accel": 0.0296,
-        "slope": -0.0018,
-        "close": 19.82,
-        "is_favorito": false
-      },
-      {
         "ticker": "FIS",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.573,
+        "score": 0.574,
         "rsi": 55.9,
         "accel": 0.0323,
         "slope": -0.0021,
         "close": 41.89,
+        "is_favorito": false
+      },
+      {
+        "ticker": "MTX.DE",
+        "sector": "Industrials",
+        "index": "DAX",
+        "score": 0.573,
+        "rsi": 33.1,
+        "accel": 0.0502,
+        "slope": -0.0055,
+        "close": 350.8,
         "is_favorito": false
       },
       {
@@ -1963,7 +2062,7 @@
         "ticker": "AMD",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.572,
+        "score": 0.573,
         "rsi": 40.1,
         "accel": 0.0497,
         "slope": -0.003,
@@ -1974,11 +2073,11 @@
         "ticker": "SIE.DE",
         "sector": "Industrials",
         "index": "DAX",
-        "score": 0.571,
-        "rsi": 44.1,
+        "score": 0.572,
+        "rsi": 44.3,
         "accel": -0.0197,
         "slope": -0.0005,
-        "close": 271.05,
+        "close": 271.15,
         "is_favorito": false
       },
       {
@@ -1996,7 +2095,7 @@
         "ticker": "WMB",
         "sector": "Energy",
         "index": "S&P500",
-        "score": 0.569,
+        "score": 0.57,
         "rsi": 52.6,
         "accel": -0.0276,
         "slope": 0.0017,
@@ -2007,7 +2106,7 @@
         "ticker": "PNR",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.569,
+        "score": 0.568,
         "rsi": 31.9,
         "accel": 0.115,
         "slope": -0.0067,
@@ -2018,7 +2117,7 @@
         "ticker": "HPE",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.568,
+        "score": 0.567,
         "rsi": 35.6,
         "accel": 0.0023,
         "slope": -0.0043,
@@ -2029,7 +2128,7 @@
         "ticker": "WTW",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.566,
+        "score": 0.564,
         "rsi": 56.8,
         "accel": -0.0107,
         "slope": 0.0003,
@@ -2051,44 +2150,11 @@
         "ticker": "UPS",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.564,
+        "score": 0.563,
         "rsi": 51.3,
         "accel": -0.0358,
         "slope": 0.0008,
         "close": 102.29,
-        "is_favorito": false
-      },
-      {
-        "ticker": "VMRK",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.564,
-        "rsi": 59.9,
-        "accel": 0.0173,
-        "slope": 0.0,
-        "close": 65.35,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MSI",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.564,
-        "rsi": 57.2,
-        "accel": -0.0242,
-        "slope": 0.0026,
-        "close": 468.05,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MTX.DE",
-        "sector": "Industrials",
-        "index": "DAX",
-        "score": 0.562,
-        "rsi": 36.2,
-        "accel": 0.0507,
-        "slope": -0.0055,
-        "close": 354.1,
         "is_favorito": false
       },
       {
@@ -2103,36 +2169,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "CCI",
+        "ticker": "VMRK",
         "sector": "Real Estate",
         "index": "S&P500",
         "score": 0.562,
-        "rsi": 57.4,
-        "accel": -0.0162,
-        "slope": 0.0014,
-        "close": 75.83,
+        "rsi": 59.9,
+        "accel": 0.0173,
+        "slope": 0.0,
+        "close": 65.35,
         "is_favorito": false
       },
       {
-        "ticker": "NXPI",
+        "ticker": "MSI",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.561,
-        "rsi": 43.9,
-        "accel": 0.0361,
-        "slope": -0.0031,
-        "close": 227.84,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MRK.DE",
-        "sector": "Healthcare",
-        "index": "DAX",
-        "score": 0.561,
-        "rsi": 41.9,
-        "accel": 0.0313,
-        "slope": -0.0005,
-        "close": 134.6,
+        "score": 0.562,
+        "rsi": 57.2,
+        "accel": -0.0242,
+        "slope": 0.0026,
+        "close": 468.05,
         "is_favorito": false
       },
       {
@@ -2147,10 +2202,32 @@
         "is_favorito": false
       },
       {
+        "ticker": "CCI",
+        "sector": "Real Estate",
+        "index": "S&P500",
+        "score": 0.561,
+        "rsi": 57.4,
+        "accel": -0.0162,
+        "slope": 0.0014,
+        "close": 75.83,
+        "is_favorito": false
+      },
+      {
+        "ticker": "NXPI",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.56,
+        "rsi": 43.9,
+        "accel": 0.0361,
+        "slope": -0.0031,
+        "close": 227.84,
+        "is_favorito": false
+      },
+      {
         "ticker": "BALL",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.56,
+        "score": 0.559,
         "rsi": 62.7,
         "accel": -0.01,
         "slope": 0.0011,
@@ -2161,7 +2238,7 @@
         "ticker": "TMUS",
         "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.56,
+        "score": 0.559,
         "rsi": 53.9,
         "accel": -0.0136,
         "slope": 0.0019,
@@ -2183,7 +2260,7 @@
         "ticker": "SYF",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.559,
+        "score": 0.558,
         "rsi": 47.4,
         "accel": 0.0081,
         "slope": -0.0006,
@@ -2194,22 +2271,11 @@
         "ticker": "VTR",
         "sector": "Real Estate",
         "index": "S&P500",
-        "score": 0.558,
+        "score": 0.557,
         "rsi": 44.5,
         "accel": 0.0048,
         "slope": 0.0012,
         "close": 90.27,
-        "is_favorito": false
-      },
-      {
-        "ticker": "J",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.558,
-        "rsi": 56.8,
-        "accel": -0.0556,
-        "slope": 0.0018,
-        "close": 146.23,
         "is_favorito": false
       },
       {
@@ -2257,58 +2323,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "SHL.DE",
-        "sector": "Healthcare",
-        "index": "DAX",
+        "ticker": "J",
+        "sector": "Industrials",
+        "index": "S&P500",
         "score": 0.555,
-        "rsi": 40.3,
-        "accel": 0.0095,
-        "slope": -0.0002,
-        "close": 38.55,
+        "rsi": 56.8,
+        "accel": -0.0556,
+        "slope": 0.0018,
+        "close": 146.23,
         "is_favorito": false
       },
       {
         "ticker": "WAT",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.555,
+        "score": 0.552,
         "rsi": 51.1,
         "accel": -0.037,
         "slope": 0.0003,
         "close": 409.38,
-        "is_favorito": false
-      },
-      {
-        "ticker": "O",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.553,
-        "rsi": 41.6,
-        "accel": 0.006,
-        "slope": -0.0006,
-        "close": 61.25,
-        "is_favorito": false
-      },
-      {
-        "ticker": "FISV",
-        "sector": "N/A",
-        "index": "S&P500",
-        "score": 0.553,
-        "rsi": 55.3,
-        "accel": 0.0171,
-        "slope": -0.0003,
-        "close": 53.0,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MAP.MC",
-        "sector": "Financial Services",
-        "index": "IBEX35",
-        "score": 0.552,
-        "rsi": 60.5,
-        "accel": -0.0113,
-        "slope": 0.0015,
-        "close": 4.48,
         "is_favorito": false
       },
       {
@@ -2323,25 +2356,25 @@
         "is_favorito": true
       },
       {
-        "ticker": "KVUE",
-        "sector": "Consumer Defensive",
+        "ticker": "O",
+        "sector": "Real Estate",
         "index": "S&P500",
         "score": 0.552,
-        "rsi": 49.0,
-        "accel": -0.0104,
-        "slope": 0.0003,
-        "close": 18.74,
+        "rsi": 41.6,
+        "accel": 0.006,
+        "slope": -0.0006,
+        "close": 61.25,
         "is_favorito": false
       },
       {
-        "ticker": "GOOG",
-        "sector": "Communication Services",
-        "index": "S&P500",
-        "score": 0.551,
-        "rsi": 43.3,
-        "accel": 0.0377,
-        "slope": -0.0021,
-        "close": 335.31,
+        "ticker": "FRE.DE",
+        "sector": "Healthcare",
+        "index": "DAX",
+        "score": 0.552,
+        "rsi": 35.8,
+        "accel": 0.0383,
+        "slope": -0.0034,
+        "close": 44.97,
         "is_favorito": false
       },
       {
@@ -2359,11 +2392,33 @@
         "ticker": "CRWD",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.55,
+        "score": 0.551,
         "rsi": 49.7,
         "accel": -0.0518,
         "slope": -0.0024,
         "close": 213.1,
+        "is_favorito": false
+      },
+      {
+        "ticker": "FISV",
+        "sector": "N/A",
+        "index": "S&P500",
+        "score": 0.551,
+        "rsi": 55.3,
+        "accel": 0.0171,
+        "slope": -0.0003,
+        "close": 53.0,
+        "is_favorito": false
+      },
+      {
+        "ticker": "KVUE",
+        "sector": "Consumer Defensive",
+        "index": "S&P500",
+        "score": 0.55,
+        "rsi": 49.0,
+        "accel": -0.0104,
+        "slope": 0.0003,
+        "close": 18.74,
         "is_favorito": false
       },
       {
@@ -2375,6 +2430,28 @@
         "accel": -0.0113,
         "slope": -0.0002,
         "close": 169.65,
+        "is_favorito": false
+      },
+      {
+        "ticker": "GOOG",
+        "sector": "Communication Services",
+        "index": "S&P500",
+        "score": 0.55,
+        "rsi": 43.3,
+        "accel": 0.0377,
+        "slope": -0.0021,
+        "close": 335.31,
+        "is_favorito": false
+      },
+      {
+        "ticker": "STT",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.549,
+        "rsi": 51.9,
+        "accel": -0.0457,
+        "slope": 0.0013,
+        "close": 194.26,
         "is_favorito": false
       },
       {
@@ -2392,33 +2469,11 @@
         "ticker": "CSX",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.549,
+        "score": 0.548,
         "rsi": 41.2,
         "accel": -0.0111,
         "slope": -0.0002,
         "close": 49.41,
-        "is_favorito": false
-      },
-      {
-        "ticker": "NDAQ",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.549,
-        "rsi": 50.8,
-        "accel": -0.0475,
-        "slope": 0.0018,
-        "close": 96.88,
-        "is_favorito": false
-      },
-      {
-        "ticker": "STT",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.548,
-        "rsi": 51.9,
-        "accel": -0.0457,
-        "slope": 0.0013,
-        "close": 194.26,
         "is_favorito": false
       },
       {
@@ -2433,14 +2488,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "BRK-B",
+        "ticker": "NDAQ",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.548,
-        "rsi": 61.5,
-        "accel": 0.0375,
-        "slope": -0.0014,
-        "close": 506.03,
+        "score": 0.547,
+        "rsi": 50.8,
+        "accel": -0.0475,
+        "slope": 0.0018,
+        "close": 96.88,
         "is_favorito": false
       },
       {
@@ -2458,11 +2513,22 @@
         "ticker": "AMT",
         "sector": "Real Estate",
         "index": "S&P500",
-        "score": 0.547,
+        "score": 0.546,
         "rsi": 57.7,
         "accel": -0.0293,
         "slope": 0.0018,
         "close": 175.85,
+        "is_favorito": false
+      },
+      {
+        "ticker": "BRK-B",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.546,
+        "rsi": 61.5,
+        "accel": 0.0375,
+        "slope": -0.0014,
+        "close": 506.03,
         "is_favorito": false
       },
       {
@@ -2477,21 +2543,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "ACX.MC",
-        "sector": "Basic Materials",
-        "index": "IBEX35",
-        "score": 0.546,
-        "rsi": 67.6,
-        "accel": 0.0029,
-        "slope": -0.0004,
-        "close": 18.37,
-        "is_favorito": false
-      },
-      {
         "ticker": "CAT",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.546,
+        "score": 0.545,
         "rsi": 31.6,
         "accel": 0.0673,
         "slope": -0.0044,
@@ -2502,7 +2557,7 @@
         "ticker": "SRE",
         "sector": "Utilities",
         "index": "S&P500",
-        "score": 0.546,
+        "score": 0.544,
         "rsi": 45.4,
         "accel": 0.0005,
         "slope": -0.0012,
@@ -2510,54 +2565,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "ADS.DE",
-        "sector": "Consumer Cyclical",
-        "index": "DAX",
-        "score": 0.545,
-        "rsi": 39.1,
-        "accel": 0.0757,
-        "slope": -0.0046,
-        "close": 148.6,
-        "is_favorito": false
-      },
-      {
-        "ticker": "APO",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.543,
-        "rsi": 49.2,
-        "accel": -0.0589,
-        "slope": -0.0007,
-        "close": 133.67,
-        "is_favorito": false
-      },
-      {
-        "ticker": "CBRE",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.543,
-        "rsi": 49.9,
-        "accel": -0.0224,
-        "slope": -0.0006,
-        "close": 147.85,
-        "is_favorito": false
-      },
-      {
-        "ticker": "WFC",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.542,
-        "rsi": 60.7,
-        "accel": 0.0048,
-        "slope": -0.0005,
-        "close": 89.97,
+        "ticker": "ACX.MC",
+        "sector": "Basic Materials",
+        "index": "IBEX35",
+        "score": 0.544,
+        "rsi": 64.6,
+        "accel": 0.0028,
+        "slope": -0.0004,
+        "close": 18.25,
         "is_favorito": false
       },
       {
         "ticker": "DASH",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.542,
+        "score": 0.543,
         "rsi": 49.2,
         "accel": -0.0985,
         "slope": 0.005,
@@ -2565,14 +2587,36 @@
         "is_favorito": false
       },
       {
-        "ticker": "AMS.MC",
-        "sector": "Technology",
-        "index": "IBEX35",
+        "ticker": "WFC",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.543,
+        "rsi": 60.7,
+        "accel": 0.0048,
+        "slope": -0.0005,
+        "close": 89.97,
+        "is_favorito": false
+      },
+      {
+        "ticker": "APO",
+        "sector": "Financial Services",
+        "index": "S&P500",
         "score": 0.541,
-        "rsi": 47.8,
-        "accel": -0.0121,
-        "slope": 0.0003,
-        "close": 56.1,
+        "rsi": 49.2,
+        "accel": -0.0589,
+        "slope": -0.0007,
+        "close": 133.67,
+        "is_favorito": false
+      },
+      {
+        "ticker": "ADS.DE",
+        "sector": "Consumer Cyclical",
+        "index": "DAX",
+        "score": 0.541,
+        "rsi": 39.6,
+        "accel": 0.0759,
+        "slope": -0.0046,
+        "close": 148.95,
         "is_favorito": false
       },
       {
@@ -2587,25 +2631,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "ANA.MC",
-        "sector": "Industrials",
-        "index": "IBEX35",
-        "score": 0.541,
-        "rsi": 47.5,
-        "accel": 0.0159,
-        "slope": -0.0019,
-        "close": 208.8,
-        "is_favorito": false
-      },
-      {
-        "ticker": "ELV",
-        "sector": "Healthcare",
+        "ticker": "CBRE",
+        "sector": "Real Estate",
         "index": "S&P500",
-        "score": 0.54,
-        "rsi": 63.6,
-        "accel": -0.008,
-        "slope": 0.0013,
-        "close": 407.5,
+        "score": 0.541,
+        "rsi": 49.9,
+        "accel": -0.0224,
+        "slope": -0.0006,
+        "close": 147.85,
         "is_favorito": false
       },
       {
@@ -2620,25 +2653,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "FSLR",
-        "sector": "Technology",
+        "ticker": "ELV",
+        "sector": "Healthcare",
         "index": "S&P500",
         "score": 0.539,
-        "rsi": 35.7,
-        "accel": 0.1625,
-        "slope": -0.0101,
-        "close": 204.45,
-        "is_favorito": false
-      },
-      {
-        "ticker": "TAP",
-        "sector": "Consumer Defensive",
-        "index": "S&P500",
-        "score": 0.539,
-        "rsi": 51.7,
-        "accel": 0.0108,
-        "slope": -0.002,
-        "close": 40.5,
+        "rsi": 63.6,
+        "accel": -0.008,
+        "slope": 0.0013,
+        "close": 407.5,
         "is_favorito": false
       },
       {
@@ -2653,14 +2675,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "IBM",
-        "sector": "Technology",
-        "index": "S&P500",
+        "ticker": "SAN.MC",
+        "sector": "Financial Services",
+        "index": "IBEX35",
         "score": 0.539,
-        "rsi": 56.6,
-        "accel": -0.0164,
-        "slope": -0.0007,
-        "close": 234.89,
+        "rsi": 68.0,
+        "accel": 0.0214,
+        "slope": 0.0002,
+        "close": 12.89,
         "is_favorito": false
       },
       {
@@ -2675,47 +2697,36 @@
         "is_favorito": false
       },
       {
-        "ticker": "NTRS",
-        "sector": "Financial Services",
+        "ticker": "FSLR",
+        "sector": "Technology",
         "index": "S&P500",
-        "score": 0.537,
-        "rsi": 42.1,
-        "accel": -0.0144,
-        "slope": -0.0012,
-        "close": 186.63,
+        "score": 0.538,
+        "rsi": 35.7,
+        "accel": 0.1625,
+        "slope": -0.0101,
+        "close": 204.45,
+        "is_favorito": false
+      },
+      {
+        "ticker": "TAP",
+        "sector": "Consumer Defensive",
+        "index": "S&P500",
+        "score": 0.538,
+        "rsi": 51.7,
+        "accel": 0.0108,
+        "slope": -0.002,
+        "close": 40.5,
         "is_favorito": false
       },
       {
         "ticker": "PNC",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.537,
+        "score": 0.538,
         "rsi": 35.7,
         "accel": 0.0423,
         "slope": -0.0035,
         "close": 245.6,
-        "is_favorito": false
-      },
-      {
-        "ticker": "BXP",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.537,
-        "rsi": 53.7,
-        "accel": -0.0072,
-        "slope": 0.0003,
-        "close": 67.69,
-        "is_favorito": false
-      },
-      {
-        "ticker": "KEY",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.537,
-        "rsi": 39.5,
-        "accel": 0.0338,
-        "slope": -0.003,
-        "close": 22.18,
         "is_favorito": false
       },
       {
@@ -2730,10 +2741,43 @@
         "is_favorito": false
       },
       {
+        "ticker": "KEY",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.537,
+        "rsi": 39.5,
+        "accel": 0.0338,
+        "slope": -0.003,
+        "close": 22.18,
+        "is_favorito": false
+      },
+      {
+        "ticker": "NTRS",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.537,
+        "rsi": 42.1,
+        "accel": -0.0144,
+        "slope": -0.0012,
+        "close": 186.63,
+        "is_favorito": false
+      },
+      {
+        "ticker": "DUK",
+        "sector": "Utilities",
+        "index": "S&P500",
+        "score": 0.536,
+        "rsi": 36.0,
+        "accel": 0.0209,
+        "slope": -0.0012,
+        "close": 120.22,
+        "is_favorito": false
+      },
+      {
         "ticker": "DAL",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.537,
+        "score": 0.536,
         "rsi": 31.6,
         "accel": 0.1296,
         "slope": -0.0092,
@@ -2752,10 +2796,21 @@
         "is_favorito": false
       },
       {
+        "ticker": "IBM",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.536,
+        "rsi": 56.6,
+        "accel": -0.0164,
+        "slope": -0.0007,
+        "close": 234.89,
+        "is_favorito": false
+      },
+      {
         "ticker": "FAST",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.536,
+        "score": 0.535,
         "rsi": 40.2,
         "accel": 0.02,
         "slope": -0.0035,
@@ -2766,11 +2821,22 @@
         "ticker": "AEP",
         "sector": "Utilities",
         "index": "S&P500",
-        "score": 0.536,
+        "score": 0.535,
         "rsi": 41.3,
         "accel": 0.0164,
         "slope": -0.0009,
         "close": 124.5,
+        "is_favorito": false
+      },
+      {
+        "ticker": "BXP",
+        "sector": "Real Estate",
+        "index": "S&P500",
+        "score": 0.535,
+        "rsi": 53.7,
+        "accel": -0.0072,
+        "slope": 0.0003,
+        "close": 67.69,
         "is_favorito": false
       },
       {
@@ -2785,39 +2851,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "GIS",
-        "sector": "Consumer Defensive",
-        "index": "S&P500",
-        "score": 0.535,
-        "rsi": 51.6,
-        "accel": -0.14,
-        "slope": 0.0049,
-        "close": 38.29,
-        "is_favorito": false
-      },
-      {
-        "ticker": "DUK",
-        "sector": "Utilities",
-        "index": "S&P500",
-        "score": 0.535,
-        "rsi": 36.0,
-        "accel": 0.0209,
-        "slope": -0.0012,
-        "close": 120.22,
-        "is_favorito": false
-      },
-      {
-        "ticker": "GS",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.534,
-        "rsi": 48.1,
-        "accel": -0.0014,
-        "slope": -0.0007,
-        "close": 1038.61,
-        "is_favorito": false
-      },
-      {
         "ticker": "EG",
         "sector": "Financial Services",
         "index": "S&P500",
@@ -2826,17 +2859,6 @@
         "accel": -0.0198,
         "slope": 0.0022,
         "close": 380.87,
-        "is_favorito": false
-      },
-      {
-        "ticker": "AOS",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.533,
-        "rsi": 46.4,
-        "accel": 0.0415,
-        "slope": -0.0031,
-        "close": 60.48,
         "is_favorito": false
       },
       {
@@ -2851,32 +2873,43 @@
         "is_favorito": false
       },
       {
-        "ticker": "SAN.MC",
-        "sector": "Financial Services",
-        "index": "IBEX35",
+        "ticker": "GIS",
+        "sector": "Consumer Defensive",
+        "index": "S&P500",
         "score": 0.533,
-        "rsi": 62.0,
-        "accel": 0.0154,
-        "slope": -0.0002,
-        "close": 12.88,
+        "rsi": 51.6,
+        "accel": -0.14,
+        "slope": 0.0049,
+        "close": 38.29,
         "is_favorito": false
       },
       {
-        "ticker": "ENR.DE",
+        "ticker": "AOS",
         "sector": "Industrials",
-        "index": "DAX",
-        "score": 0.531,
-        "rsi": 41.4,
-        "accel": 0.0775,
-        "slope": -0.0064,
-        "close": 148.96,
+        "index": "S&P500",
+        "score": 0.533,
+        "rsi": 46.4,
+        "accel": 0.0415,
+        "slope": -0.0031,
+        "close": 60.48,
+        "is_favorito": false
+      },
+      {
+        "ticker": "GS",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.532,
+        "rsi": 48.1,
+        "accel": -0.0014,
+        "slope": -0.0007,
+        "close": 1038.61,
         "is_favorito": false
       },
       {
         "ticker": "RF",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.53,
+        "score": 0.531,
         "rsi": 38.6,
         "accel": 0.0342,
         "slope": -0.0031,
@@ -2909,7 +2942,7 @@
         "ticker": "SBUX",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.527,
+        "score": 0.528,
         "rsi": 40.5,
         "accel": -0.0305,
         "slope": 0.0004,
@@ -2928,14 +2961,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "TSCO",
+        "ticker": "TPR",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
         "score": 0.526,
-        "rsi": 55.7,
-        "accel": -0.0257,
-        "slope": -0.0004,
-        "close": 34.99,
+        "rsi": 36.8,
+        "accel": 0.2202,
+        "slope": -0.0141,
+        "close": 122.14,
         "is_favorito": false
       },
       {
@@ -2953,22 +2986,11 @@
         "ticker": "NUE",
         "sector": "Basic Materials",
         "index": "S&P500",
-        "score": 0.525,
+        "score": 0.526,
         "rsi": 41.1,
         "accel": 0.0824,
         "slope": -0.0046,
         "close": 261.07,
-        "is_favorito": false
-      },
-      {
-        "ticker": "TPR",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.525,
-        "rsi": 36.8,
-        "accel": 0.2202,
-        "slope": -0.0141,
-        "close": 122.14,
         "is_favorito": false
       },
       {
@@ -2983,6 +3005,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "TSCO",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.525,
+        "rsi": 55.7,
+        "accel": -0.0257,
+        "slope": -0.0004,
+        "close": 34.99,
+        "is_favorito": false
+      },
+      {
         "ticker": "AXP",
         "sector": "Financial Services",
         "index": "S&P500",
@@ -2994,36 +3027,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "VNA.DE",
-        "sector": "Real Estate",
-        "index": "DAX",
-        "score": 0.524,
-        "rsi": 30.6,
-        "accel": 0.0833,
-        "slope": -0.0054,
-        "close": 18.75,
-        "is_favorito": false
-      },
-      {
-        "ticker": "BEI.DE",
-        "sector": "Consumer Defensive",
-        "index": "DAX",
-        "score": 0.523,
-        "rsi": 44.8,
-        "accel": 0.0246,
-        "slope": -0.0006,
-        "close": 75.86,
-        "is_favorito": false
-      },
-      {
         "ticker": "WBD",
         "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.522,
+        "score": 0.523,
         "rsi": 56.1,
         "accel": -0.0882,
         "slope": 0.003,
         "close": 28.25,
+        "is_favorito": false
+      },
+      {
+        "ticker": "VNA.DE",
+        "sector": "Real Estate",
+        "index": "DAX",
+        "score": 0.523,
+        "rsi": 31.1,
+        "accel": 0.0835,
+        "slope": -0.0054,
+        "close": 18.81,
         "is_favorito": false
       },
       {
@@ -3038,6 +3060,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "BEN",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.522,
+        "rsi": 55.4,
+        "accel": -0.0192,
+        "slope": 0.0005,
+        "close": 34.73,
+        "is_favorito": false
+      },
+      {
         "ticker": "MAA",
         "sector": "Real Estate",
         "index": "S&P500",
@@ -3049,32 +3082,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "BEN",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.521,
-        "rsi": 55.4,
-        "accel": -0.0192,
-        "slope": 0.0005,
-        "close": 34.73,
-        "is_favorito": false
-      },
-      {
-        "ticker": "CABK.MC",
-        "sector": "Financial Services",
-        "index": "IBEX35",
-        "score": 0.521,
-        "rsi": 66.3,
-        "accel": -0.0272,
-        "slope": 0.0021,
-        "close": 13.48,
-        "is_favorito": false
-      },
-      {
         "ticker": "HBAN",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.521,
+        "score": 0.52,
         "rsi": 32.0,
         "accel": 0.0255,
         "slope": -0.0038,
@@ -3107,7 +3118,7 @@
         "ticker": "TT",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.519,
+        "score": 0.518,
         "rsi": 31.6,
         "accel": 0.062,
         "slope": -0.0051,
@@ -3115,10 +3126,32 @@
         "is_favorito": false
       },
       {
+        "ticker": "ENR.DE",
+        "sector": "Industrials",
+        "index": "DAX",
+        "score": 0.518,
+        "rsi": 39.2,
+        "accel": 0.077,
+        "slope": -0.0064,
+        "close": 147.88,
+        "is_favorito": false
+      },
+      {
+        "ticker": "QIA.DE",
+        "sector": "Healthcare",
+        "index": "DAX",
+        "score": 0.518,
+        "rsi": 48.4,
+        "accel": -0.0209,
+        "slope": 0.0,
+        "close": 36.56,
+        "is_favorito": false
+      },
+      {
         "ticker": "CVS",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.519,
+        "score": 0.518,
         "rsi": 60.1,
         "accel": 0.0341,
         "slope": 0.0003,
@@ -3126,36 +3159,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "BAS.DE",
-        "sector": "Basic Materials",
+        "ticker": "MUV2.DE",
+        "sector": "Financial Services",
         "index": "DAX",
-        "score": 0.516,
-        "rsi": 68.4,
-        "accel": -0.0288,
-        "slope": 0.0027,
-        "close": 53.05,
+        "score": 0.518,
+        "rsi": 34.1,
+        "accel": -0.0064,
+        "slope": 0.001,
+        "close": 504.6,
         "is_favorito": false
       },
       {
-        "ticker": "CRL",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.515,
-        "rsi": 51.5,
-        "accel": -0.0969,
-        "slope": 0.0032,
-        "close": 288.5,
-        "is_favorito": false
-      },
-      {
-        "ticker": "TEL",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.515,
-        "rsi": 41.7,
-        "accel": 0.0557,
-        "slope": -0.0032,
-        "close": 208.65,
+        "ticker": "ANA.MC",
+        "sector": "Industrials",
+        "index": "IBEX35",
+        "score": 0.514,
+        "rsi": 52.0,
+        "accel": 0.0161,
+        "slope": -0.0019,
+        "close": 211.8,
         "is_favorito": false
       },
       {
@@ -3170,6 +3192,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "TEL",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.513,
+        "rsi": 41.7,
+        "accel": 0.0557,
+        "slope": -0.0032,
+        "close": 208.65,
+        "is_favorito": false
+      },
+      {
         "ticker": "UDR",
         "sector": "Real Estate",
         "index": "S&P500",
@@ -3181,21 +3214,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "RWE.DE",
-        "sector": "Utilities",
-        "index": "DAX",
-        "score": 0.512,
-        "rsi": 60.9,
-        "accel": -0.0438,
-        "slope": 0.0006,
-        "close": 59.7,
+        "ticker": "CRL",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.513,
+        "rsi": 51.5,
+        "accel": -0.0969,
+        "slope": 0.0032,
+        "close": 288.5,
         "is_favorito": false
       },
       {
         "ticker": "ETN",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.511,
+        "score": 0.512,
         "rsi": 30.5,
         "accel": 0.1011,
         "slope": -0.0088,
@@ -3217,7 +3250,7 @@
         "ticker": "HWM",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.51,
+        "score": 0.511,
         "rsi": 32.2,
         "accel": 0.0836,
         "slope": -0.007,
@@ -3225,36 +3258,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "LII",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.51,
-        "rsi": 35.6,
-        "accel": 0.0965,
-        "slope": -0.0075,
-        "close": 390.53,
-        "is_favorito": false
-      },
-      {
-        "ticker": "SHW",
-        "sector": "Basic Materials",
-        "index": "S&P500",
-        "score": 0.51,
-        "rsi": 34.0,
-        "accel": 0.0473,
-        "slope": -0.0049,
-        "close": 333.71,
-        "is_favorito": false
-      },
-      {
         "ticker": "STX",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.509,
+        "score": 0.51,
         "rsi": 31.2,
         "accel": 0.0278,
         "slope": -0.004,
         "close": 849.28,
+        "is_favorito": false
+      },
+      {
+        "ticker": "LII",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.509,
+        "rsi": 35.6,
+        "accel": 0.0965,
+        "slope": -0.0075,
+        "close": 390.53,
         "is_favorito": false
       },
       {
@@ -3280,25 +3302,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "LYB",
+        "ticker": "SHW",
         "sector": "Basic Materials",
         "index": "S&P500",
-        "score": 0.507,
-        "rsi": 48.2,
-        "accel": -0.0469,
-        "slope": 0.003,
-        "close": 63.52,
+        "score": 0.508,
+        "rsi": 34.0,
+        "accel": 0.0473,
+        "slope": -0.0049,
+        "close": 333.71,
         "is_favorito": false
       },
       {
-        "ticker": "LLY",
-        "sector": "Healthcare",
+        "ticker": "GE",
+        "sector": "Industrials",
         "index": "S&P500",
         "score": 0.507,
-        "rsi": 43.4,
-        "accel": 0.0128,
-        "slope": -0.0023,
-        "close": 1149.36,
+        "rsi": 32.3,
+        "accel": 0.084,
+        "slope": -0.0063,
+        "close": 337.12,
         "is_favorito": false
       },
       {
@@ -3316,7 +3338,7 @@
         "ticker": "CAH",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.507,
+        "score": 0.506,
         "rsi": 65.8,
         "accel": 0.0138,
         "slope": 0.0014,
@@ -3324,10 +3346,54 @@
         "is_favorito": false
       },
       {
+        "ticker": "LLY",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.506,
+        "rsi": 43.4,
+        "accel": 0.0128,
+        "slope": -0.0023,
+        "close": 1149.36,
+        "is_favorito": false
+      },
+      {
+        "ticker": "LYB",
+        "sector": "Basic Materials",
+        "index": "S&P500",
+        "score": 0.506,
+        "rsi": 48.2,
+        "accel": -0.0469,
+        "slope": 0.003,
+        "close": 63.52,
+        "is_favorito": false
+      },
+      {
+        "ticker": "RED.MC",
+        "sector": "Utilities",
+        "index": "IBEX35",
+        "score": 0.506,
+        "rsi": 37.7,
+        "accel": 0.012,
+        "slope": -0.0009,
+        "close": 14.87,
+        "is_favorito": false
+      },
+      {
+        "ticker": "UAL",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.505,
+        "rsi": 34.8,
+        "accel": 0.1444,
+        "slope": -0.01,
+        "close": 111.38,
+        "is_favorito": false
+      },
+      {
         "ticker": "DOV",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.507,
+        "score": 0.505,
         "rsi": 30.6,
         "accel": 0.0561,
         "slope": -0.0049,
@@ -3335,47 +3401,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "SAP.DE",
-        "sector": "Technology",
-        "index": "DAX",
-        "score": 0.506,
-        "rsi": 48.5,
-        "accel": -0.069,
-        "slope": 0.0026,
-        "close": 181.16,
-        "is_favorito": false
-      },
-      {
-        "ticker": "GE",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.506,
-        "rsi": 32.3,
-        "accel": 0.084,
-        "slope": -0.0063,
-        "close": 337.12,
-        "is_favorito": false
-      },
-      {
         "ticker": "KEYS",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.505,
+        "score": 0.504,
         "rsi": 30.2,
         "accel": 0.0516,
         "slope": -0.0055,
         "close": 327.21,
-        "is_favorito": false
-      },
-      {
-        "ticker": "PG",
-        "sector": "Consumer Defensive",
-        "index": "S&P500",
-        "score": 0.505,
-        "rsi": 60.7,
-        "accel": 0.0221,
-        "slope": 0.0004,
-        "close": 146.44,
         "is_favorito": false
       },
       {
@@ -3390,21 +3423,32 @@
         "is_favorito": false
       },
       {
-        "ticker": "UAL",
-        "sector": "Industrials",
+        "ticker": "SAP.DE",
+        "sector": "Technology",
+        "index": "DAX",
+        "score": 0.503,
+        "rsi": 50.0,
+        "accel": -0.0695,
+        "slope": 0.0026,
+        "close": 182.52,
+        "is_favorito": false
+      },
+      {
+        "ticker": "PG",
+        "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.504,
-        "rsi": 34.8,
-        "accel": 0.1444,
-        "slope": -0.01,
-        "close": 111.38,
+        "score": 0.503,
+        "rsi": 60.7,
+        "accel": 0.0221,
+        "slope": 0.0004,
+        "close": 146.44,
         "is_favorito": false
       },
       {
         "ticker": "PPL",
         "sector": "Utilities",
         "index": "S&P500",
-        "score": 0.503,
+        "score": 0.502,
         "rsi": 40.0,
         "accel": 0.0125,
         "slope": -0.0018,
@@ -3415,7 +3459,7 @@
         "ticker": "KMB",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.503,
+        "score": 0.502,
         "rsi": 44.6,
         "accel": -0.0079,
         "slope": -0.0002,
@@ -3423,26 +3467,26 @@
         "is_favorito": false
       },
       {
-        "ticker": "SY1.DE",
-        "sector": "Basic Materials",
-        "index": "DAX",
-        "score": 0.502,
-        "rsi": 65.8,
-        "accel": -0.003,
-        "slope": 0.0018,
-        "close": 89.94,
-        "is_favorito": false
-      },
-      {
         "ticker": "FDX",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.502,
+        "score": 0.501,
         "rsi": 40.5,
         "accel": -0.0463,
         "slope": -0.0001,
         "close": 322.52,
         "is_favorito": false
+      },
+      {
+        "ticker": "GLW",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.501,
+        "rsi": 32.6,
+        "accel": 0.0541,
+        "slope": -0.0072,
+        "close": 154.3,
+        "is_favorito": true
       },
       {
         "ticker": "SWKS",
@@ -3456,21 +3500,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "GLW",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.5,
-        "rsi": 32.6,
-        "accel": 0.0541,
-        "slope": -0.0072,
-        "close": 154.3,
-        "is_favorito": true
+        "ticker": "SY1.DE",
+        "sector": "Basic Materials",
+        "index": "DAX",
+        "score": 0.499,
+        "rsi": 68.4,
+        "accel": -0.003,
+        "slope": 0.0018,
+        "close": 90.4,
+        "is_favorito": false
       },
       {
         "ticker": "MDLZ",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.499,
+        "score": 0.498,
         "rsi": 44.2,
         "accel": 0.0061,
         "slope": -0.0003,
@@ -3481,7 +3525,7 @@
         "ticker": "GPN",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.498,
+        "score": 0.497,
         "rsi": 58.5,
         "accel": -0.0475,
         "slope": 0.0027,
@@ -3489,32 +3533,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "PLD",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.496,
-        "rsi": 38.9,
-        "accel": -0.0109,
-        "slope": -0.0002,
-        "close": 137.34,
-        "is_favorito": false
-      },
-      {
-        "ticker": "DIS",
-        "sector": "Communication Services",
-        "index": "S&P500",
-        "score": 0.496,
-        "rsi": 54.6,
-        "accel": -0.0318,
-        "slope": 0.0025,
-        "close": 105.31,
-        "is_favorito": false
-      },
-      {
         "ticker": "WDAY",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.495,
+        "score": 0.496,
         "rsi": 53.6,
         "accel": -0.1937,
         "slope": 0.005,
@@ -3522,14 +3544,36 @@
         "is_favorito": false
       },
       {
-        "ticker": "ZAL.DE",
-        "sector": "Consumer Cyclical",
+        "ticker": "PLD",
+        "sector": "Real Estate",
+        "index": "S&P500",
+        "score": 0.495,
+        "rsi": 38.9,
+        "accel": -0.0109,
+        "slope": -0.0002,
+        "close": 137.34,
+        "is_favorito": false
+      },
+      {
+        "ticker": "AIR.DE",
+        "sector": "Industrials",
         "index": "DAX",
         "score": 0.495,
-        "rsi": 58.6,
-        "accel": -0.0016,
-        "slope": -0.0006,
-        "close": 23.62,
+        "rsi": 24.8,
+        "accel": 0.0773,
+        "slope": -0.0051,
+        "close": 197.76,
+        "is_favorito": false
+      },
+      {
+        "ticker": "PSX",
+        "sector": "Energy",
+        "index": "S&P500",
+        "score": 0.495,
+        "rsi": 68.6,
+        "accel": -0.2024,
+        "slope": 0.0083,
+        "close": 255.09,
         "is_favorito": false
       },
       {
@@ -3544,25 +3588,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "CRH",
-        "sector": "Basic Materials",
-        "index": "S&P500",
-        "score": 0.495,
-        "rsi": 45.7,
-        "accel": 0.0143,
-        "slope": -0.0037,
-        "close": 94.26,
-        "is_favorito": false
-      },
-      {
-        "ticker": "PSX",
-        "sector": "Energy",
+        "ticker": "DIS",
+        "sector": "Communication Services",
         "index": "S&P500",
         "score": 0.494,
-        "rsi": 68.6,
-        "accel": -0.2024,
-        "slope": 0.0083,
-        "close": 255.09,
+        "rsi": 54.6,
+        "accel": -0.0318,
+        "slope": 0.0025,
+        "close": 105.31,
         "is_favorito": false
       },
       {
@@ -3577,43 +3610,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "ACS.MC",
-        "sector": "Industrials",
-        "index": "IBEX35",
-        "score": 0.493,
-        "rsi": 35.1,
-        "accel": 0.0642,
-        "slope": -0.0052,
-        "close": 103.6,
-        "is_favorito": false
-      },
-      {
-        "ticker": "AIR.DE",
-        "sector": "Industrials",
-        "index": "DAX",
-        "score": 0.493,
-        "rsi": 25.7,
-        "accel": 0.0777,
-        "slope": -0.0051,
-        "close": 198.64,
-        "is_favorito": false
-      },
-      {
-        "ticker": "WSM",
-        "sector": "Consumer Cyclical",
+        "ticker": "CRH",
+        "sector": "Basic Materials",
         "index": "S&P500",
-        "score": 0.493,
-        "rsi": 33.6,
-        "accel": 0.0462,
-        "slope": -0.0059,
-        "close": 227.42,
+        "score": 0.494,
+        "rsi": 45.7,
+        "accel": 0.0143,
+        "slope": -0.0037,
+        "close": 94.26,
         "is_favorito": false
       },
       {
         "ticker": "XEL",
         "sector": "Utilities",
         "index": "S&P500",
-        "score": 0.492,
+        "score": 0.493,
         "rsi": 30.8,
         "accel": 0.0067,
         "slope": -0.0019,
@@ -3621,14 +3632,36 @@
         "is_favorito": false
       },
       {
+        "ticker": "ACS.MC",
+        "sector": "Industrials",
+        "index": "IBEX35",
+        "score": 0.492,
+        "rsi": 36.0,
+        "accel": 0.0644,
+        "slope": -0.0052,
+        "close": 103.8,
+        "is_favorito": false
+      },
+      {
         "ticker": "HD",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.491,
+        "score": 0.492,
         "rsi": 34.9,
         "accel": 0.0542,
         "slope": -0.0049,
         "close": 321.05,
+        "is_favorito": false
+      },
+      {
+        "ticker": "WSM",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.491,
+        "rsi": 33.6,
+        "accel": 0.0462,
+        "slope": -0.0059,
+        "close": 227.42,
         "is_favorito": false
       },
       {
@@ -3646,7 +3679,7 @@
         "ticker": "CHTR",
         "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.491,
+        "score": 0.49,
         "rsi": 56.5,
         "accel": 0.024,
         "slope": -0.0003,
@@ -3657,7 +3690,7 @@
         "ticker": "LVS",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.489,
+        "score": 0.49,
         "rsi": 44.2,
         "accel": 0.0229,
         "slope": -0.0017,
@@ -3676,21 +3709,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "FTV",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.489,
-        "rsi": 32.2,
-        "accel": 0.0185,
-        "slope": -0.0039,
-        "close": 56.94,
-        "is_favorito": false
-      },
-      {
         "ticker": "PANW",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.489,
+        "score": 0.488,
         "rsi": 38.0,
         "accel": -0.0302,
         "slope": -0.0055,
@@ -3698,14 +3720,47 @@
         "is_favorito": false
       },
       {
+        "ticker": "FTV",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.488,
+        "rsi": 32.2,
+        "accel": 0.0185,
+        "slope": -0.0039,
+        "close": 56.94,
+        "is_favorito": false
+      },
+      {
         "ticker": "ROVI.MC",
         "sector": "Healthcare",
         "index": "IBEX35",
-        "score": 0.488,
-        "rsi": 57.1,
-        "accel": -0.0375,
+        "score": 0.487,
+        "rsi": 55.4,
+        "accel": -0.0374,
         "slope": 0.0022,
-        "close": 58.9,
+        "close": 58.7,
+        "is_favorito": false
+      },
+      {
+        "ticker": "JNJ",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.487,
+        "rsi": 63.7,
+        "accel": -0.0495,
+        "slope": 0.0032,
+        "close": 275.23,
+        "is_favorito": false
+      },
+      {
+        "ticker": "COR",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.486,
+        "rsi": 68.6,
+        "accel": 0.0074,
+        "slope": 0.0024,
+        "close": 330.95,
         "is_favorito": false
       },
       {
@@ -3720,39 +3775,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "JNJ",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.486,
-        "rsi": 63.7,
-        "accel": -0.0495,
-        "slope": 0.0032,
-        "close": 275.23,
-        "is_favorito": false
-      },
-      {
-        "ticker": "OMC",
-        "sector": "Communication Services",
-        "index": "S&P500",
-        "score": 0.485,
-        "rsi": 41.8,
-        "accel": -0.0654,
-        "slope": 0.0,
-        "close": 82.62,
-        "is_favorito": false
-      },
-      {
-        "ticker": "COR",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.485,
-        "rsi": 68.6,
-        "accel": 0.0074,
-        "slope": 0.0024,
-        "close": 330.95,
-        "is_favorito": false
-      },
-      {
         "ticker": "AWK",
         "sector": "Utilities",
         "index": "S&P500",
@@ -3764,10 +3786,21 @@
         "is_favorito": false
       },
       {
+        "ticker": "UNP",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.485,
+        "rsi": 36.9,
+        "accel": -0.0385,
+        "slope": 0.001,
+        "close": 289.62,
+        "is_favorito": false
+      },
+      {
         "ticker": "SW",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.484,
+        "score": 0.485,
         "rsi": 40.2,
         "accel": -0.0364,
         "slope": -0.0024,
@@ -3775,14 +3808,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "UNP",
-        "sector": "Industrials",
+        "ticker": "OMC",
+        "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.484,
-        "rsi": 36.9,
-        "accel": -0.0385,
-        "slope": 0.001,
-        "close": 289.62,
+        "score": 0.485,
+        "rsi": 41.8,
+        "accel": -0.0654,
+        "slope": 0.0,
+        "close": 82.62,
         "is_favorito": false
       },
       {
@@ -3819,25 +3852,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "AENA.MC",
-        "sector": "Industrials",
+        "ticker": "COL.MC",
+        "sector": "Real Estate",
         "index": "IBEX35",
         "score": 0.481,
-        "rsi": 41.3,
-        "accel": 0.0151,
-        "slope": -0.0011,
-        "close": 25.54,
-        "is_favorito": false
-      },
-      {
-        "ticker": "G24.DE",
-        "sector": "Communication Services",
-        "index": "DAX",
-        "score": 0.481,
-        "rsi": 47.4,
-        "accel": -0.0684,
-        "slope": 0.0017,
-        "close": 75.25,
+        "rsi": 31.4,
+        "accel": 0.0464,
+        "slope": -0.0033,
+        "close": 5.2,
         "is_favorito": false
       },
       {
@@ -3849,17 +3871,6 @@
         "accel": 0.101,
         "slope": -0.0066,
         "close": 85.81,
-        "is_favorito": false
-      },
-      {
-        "ticker": "PM",
-        "sector": "Consumer Defensive",
-        "index": "S&P500",
-        "score": 0.479,
-        "rsi": 46.9,
-        "accel": -0.0194,
-        "slope": 0.0005,
-        "close": 182.53,
         "is_favorito": false
       },
       {
@@ -3877,11 +3888,22 @@
         "ticker": "MCD",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.479,
+        "score": 0.478,
         "rsi": 37.4,
         "accel": 0.0396,
         "slope": -0.0026,
         "close": 255.69,
+        "is_favorito": false
+      },
+      {
+        "ticker": "PM",
+        "sector": "Consumer Defensive",
+        "index": "S&P500",
+        "score": 0.478,
+        "rsi": 46.9,
+        "accel": -0.0194,
+        "slope": 0.0005,
+        "close": 182.53,
         "is_favorito": false
       },
       {
@@ -3907,25 +3929,25 @@
         "is_favorito": false
       },
       {
+        "ticker": "G24.DE",
+        "sector": "Communication Services",
+        "index": "DAX",
+        "score": 0.476,
+        "rsi": 46.5,
+        "accel": -0.0681,
+        "slope": 0.0017,
+        "close": 74.9,
+        "is_favorito": false
+      },
+      {
         "ticker": "STZ",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.476,
+        "score": 0.475,
         "rsi": 42.8,
         "accel": 0.0135,
         "slope": -0.002,
         "close": 128.18,
-        "is_favorito": false
-      },
-      {
-        "ticker": "CMCSA",
-        "sector": "Communication Services",
-        "index": "S&P500",
-        "score": 0.475,
-        "rsi": 59.2,
-        "accel": -0.0735,
-        "slope": 0.003,
-        "close": 26.49,
         "is_favorito": false
       },
       {
@@ -3940,15 +3962,15 @@
         "is_favorito": false
       },
       {
-        "ticker": "ZS",
-        "sector": "Technology",
-        "index": "Favorito",
-        "score": 0.473,
-        "rsi": 41.6,
-        "accel": -0.1226,
-        "slope": 0.0001,
-        "close": 169.8,
-        "is_favorito": true
+        "ticker": "CMCSA",
+        "sector": "Communication Services",
+        "index": "S&P500",
+        "score": 0.474,
+        "rsi": 59.2,
+        "accel": -0.0735,
+        "slope": 0.003,
+        "close": 26.49,
+        "is_favorito": false
       },
       {
         "ticker": "AAPL",
@@ -3962,6 +3984,28 @@
         "is_favorito": true
       },
       {
+        "ticker": "ZS",
+        "sector": "Technology",
+        "index": "Favorito",
+        "score": 0.473,
+        "rsi": 41.6,
+        "accel": -0.1226,
+        "slope": 0.0001,
+        "close": 169.8,
+        "is_favorito": true
+      },
+      {
+        "ticker": "KLAC",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.473,
+        "rsi": 31.4,
+        "accel": 0.0957,
+        "slope": -0.0098,
+        "close": 185.6,
+        "is_favorito": false
+      },
+      {
         "ticker": "RSG",
         "sector": "Industrials",
         "index": "S&P500",
@@ -3970,28 +4014,6 @@
         "accel": -0.0599,
         "slope": 0.0025,
         "close": 222.71,
-        "is_favorito": false
-      },
-      {
-        "ticker": "ZTS",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.473,
-        "rsi": 58.9,
-        "accel": -0.0009,
-        "slope": 0.0025,
-        "close": 75.81,
-        "is_favorito": false
-      },
-      {
-        "ticker": "ANE.MC",
-        "sector": "Utilities",
-        "index": "IBEX35",
-        "score": 0.472,
-        "rsi": 62.5,
-        "accel": -0.0298,
-        "slope": 0.0012,
-        "close": 21.52,
         "is_favorito": false
       },
       {
@@ -4006,25 +4028,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "KLAC",
-        "sector": "Technology",
+        "ticker": "ZTS",
+        "sector": "Healthcare",
         "index": "S&P500",
         "score": 0.472,
-        "rsi": 31.4,
-        "accel": 0.0957,
-        "slope": -0.0098,
-        "close": 185.6,
+        "rsi": 58.9,
+        "accel": -0.0009,
+        "slope": 0.0025,
+        "close": 75.81,
         "is_favorito": false
       },
       {
-        "ticker": "SAB.MC",
-        "sector": "Financial Services",
-        "index": "IBEX35",
+        "ticker": "APTV",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
         "score": 0.471,
-        "rsi": 60.8,
-        "accel": -0.0559,
-        "slope": 0.0018,
-        "close": 3.74,
+        "rsi": 41.5,
+        "accel": 0.0125,
+        "slope": -0.0059,
+        "close": 47.95,
         "is_favorito": false
       },
       {
@@ -4050,43 +4072,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "STE",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.47,
-        "rsi": 41.7,
-        "accel": -0.0083,
-        "slope": -0.0015,
-        "close": 224.59,
-        "is_favorito": false
-      },
-      {
-        "ticker": "LOW",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.47,
-        "rsi": 33.1,
-        "accel": 0.0466,
-        "slope": -0.0052,
-        "close": 204.45,
-        "is_favorito": false
-      },
-      {
-        "ticker": "APTV",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.47,
-        "rsi": 41.5,
-        "accel": 0.0125,
-        "slope": -0.0059,
-        "close": 47.95,
-        "is_favorito": false
-      },
-      {
         "ticker": "WDC",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.469,
+        "score": 0.47,
         "rsi": 33.0,
         "accel": -0.0179,
         "slope": -0.0017,
@@ -4105,6 +4094,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "STE",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.469,
+        "rsi": 41.7,
+        "accel": -0.0083,
+        "slope": -0.0015,
+        "close": 224.59,
+        "is_favorito": false
+      },
+      {
         "ticker": "MCO",
         "sector": "Financial Services",
         "index": "S&P500",
@@ -4116,14 +4116,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "ALGN",
-        "sector": "Healthcare",
+        "ticker": "LOW",
+        "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.466,
-        "rsi": 31.6,
-        "accel": 0.0685,
-        "slope": -0.007,
-        "close": 158.64,
+        "score": 0.468,
+        "rsi": 33.1,
+        "accel": 0.0466,
+        "slope": -0.0052,
+        "close": 204.45,
         "is_favorito": false
       },
       {
@@ -4138,25 +4138,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "YUM",
-        "sector": "Consumer Cyclical",
+        "ticker": "ALGN",
+        "sector": "Healthcare",
         "index": "S&P500",
         "score": 0.465,
-        "rsi": 59.9,
-        "accel": -0.0102,
-        "slope": 0.0025,
-        "close": 150.71,
-        "is_favorito": false
-      },
-      {
-        "ticker": "CON.DE",
-        "sector": "Consumer Cyclical",
-        "index": "DAX",
-        "score": 0.464,
-        "rsi": 68.1,
-        "accel": -0.045,
-        "slope": 0.0018,
-        "close": 72.66,
+        "rsi": 31.6,
+        "accel": 0.0685,
+        "slope": -0.007,
+        "close": 158.64,
         "is_favorito": false
       },
       {
@@ -4174,11 +4163,22 @@
         "ticker": "MRVL",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.463,
+        "score": 0.464,
         "rsi": 46.3,
         "accel": -0.0298,
         "slope": -0.0002,
         "close": 223.55,
+        "is_favorito": false
+      },
+      {
+        "ticker": "YUM",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.462,
+        "rsi": 59.9,
+        "accel": -0.0102,
+        "slope": 0.0025,
+        "close": 150.71,
         "is_favorito": false
       },
       {
@@ -4193,32 +4193,32 @@
         "is_favorito": false
       },
       {
-        "ticker": "IR",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.46,
-        "rsi": 30.5,
-        "accel": 0.1062,
-        "slope": -0.0075,
-        "close": 76.36,
+        "ticker": "CON.DE",
+        "sector": "Consumer Cyclical",
+        "index": "DAX",
+        "score": 0.461,
+        "rsi": 67.3,
+        "accel": -0.0448,
+        "slope": 0.0018,
+        "close": 72.31,
         "is_favorito": false
       },
       {
-        "ticker": "IBKR",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.458,
-        "rsi": 47.3,
-        "accel": -0.1104,
-        "slope": 0.0026,
-        "close": 92.62,
+        "ticker": "ANE.MC",
+        "sector": "Utilities",
+        "index": "IBEX35",
+        "score": 0.46,
+        "rsi": 65.0,
+        "accel": -0.03,
+        "slope": 0.0012,
+        "close": 21.68,
         "is_favorito": false
       },
       {
         "ticker": "VZ",
         "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.458,
+        "score": 0.459,
         "rsi": 69.7,
         "accel": -0.0662,
         "slope": 0.004,
@@ -4226,25 +4226,36 @@
         "is_favorito": false
       },
       {
+        "ticker": "IBKR",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.459,
+        "rsi": 47.3,
+        "accel": -0.1104,
+        "slope": 0.0026,
+        "close": 92.62,
+        "is_favorito": false
+      },
+      {
+        "ticker": "IR",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.458,
+        "rsi": 30.5,
+        "accel": 0.1062,
+        "slope": -0.0075,
+        "close": 76.36,
+        "is_favorito": false
+      },
+      {
         "ticker": "HPQ",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.457,
+        "score": 0.458,
         "rsi": 67.3,
         "accel": -0.0888,
         "slope": 0.0026,
         "close": 32.64,
-        "is_favorito": false
-      },
-      {
-        "ticker": "NRG",
-        "sector": "Utilities",
-        "index": "S&P500",
-        "score": 0.457,
-        "rsi": 45.9,
-        "accel": 0.0713,
-        "slope": -0.0054,
-        "close": 119.02,
         "is_favorito": false
       },
       {
@@ -4259,6 +4270,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "NRG",
+        "sector": "Utilities",
+        "index": "S&P500",
+        "score": 0.457,
+        "rsi": 45.9,
+        "accel": 0.0713,
+        "slope": -0.0054,
+        "close": 119.02,
+        "is_favorito": false
+      },
+      {
         "ticker": "META",
         "sector": "Communication Services",
         "index": "S&P500",
@@ -4267,6 +4289,17 @@
         "accel": 0.0215,
         "slope": -0.0003,
         "close": 616.77,
+        "is_favorito": false
+      },
+      {
+        "ticker": "GPC",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.455,
+        "rsi": 65.0,
+        "accel": -0.036,
+        "slope": 0.0012,
+        "close": 138.08,
         "is_favorito": false
       },
       {
@@ -4284,7 +4317,7 @@
         "ticker": "VMC",
         "sector": "Basic Materials",
         "index": "S&P500",
-        "score": 0.455,
+        "score": 0.454,
         "rsi": 34.6,
         "accel": 0.0225,
         "slope": -0.004,
@@ -4292,21 +4325,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "GPC",
-        "sector": "Consumer Cyclical",
+        "ticker": "TTD",
+        "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.454,
-        "rsi": 65.0,
-        "accel": -0.036,
-        "slope": 0.0012,
-        "close": 138.08,
+        "score": 0.453,
+        "rsi": 64.5,
+        "accel": 0.2467,
+        "slope": 0.0016,
+        "close": 14.43,
         "is_favorito": false
       },
       {
         "ticker": "PLTR",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.454,
+        "score": 0.453,
         "rsi": 51.3,
         "accel": -0.1823,
         "slope": 0.0026,
@@ -4323,17 +4356,6 @@
         "slope": -0.0092,
         "close": 357.9,
         "is_favorito": true
-      },
-      {
-        "ticker": "TTD",
-        "sector": "Communication Services",
-        "index": "S&P500",
-        "score": 0.453,
-        "rsi": 64.5,
-        "accel": 0.2467,
-        "slope": 0.0016,
-        "close": 14.43,
-        "is_favorito": false
       },
       {
         "ticker": "DHR",
@@ -4358,21 +4380,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "MCHP",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.451,
-        "rsi": 33.2,
-        "accel": 0.0136,
-        "slope": -0.0069,
-        "close": 74.17,
-        "is_favorito": false
-      },
-      {
         "ticker": "DVA",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.45,
+        "score": 0.451,
         "rsi": 63.4,
         "accel": -0.0001,
         "slope": -0.0008,
@@ -4380,21 +4391,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "NTAP",
+        "ticker": "MCHP",
         "sector": "Technology",
         "index": "S&P500",
         "score": 0.45,
-        "rsi": 28.5,
-        "accel": 0.0231,
-        "slope": -0.0053,
-        "close": 185.59,
+        "rsi": 33.2,
+        "accel": 0.0136,
+        "slope": -0.0069,
+        "close": 74.17,
         "is_favorito": false
       },
       {
         "ticker": "AON",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.449,
+        "score": 0.448,
         "rsi": 36.0,
         "accel": 0.0135,
         "slope": -0.0039,
@@ -4402,25 +4413,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "IP",
-        "sector": "Consumer Cyclical",
+        "ticker": "NTAP",
+        "sector": "Technology",
         "index": "S&P500",
         "score": 0.448,
-        "rsi": 34.9,
-        "accel": 0.0181,
-        "slope": -0.0054,
-        "close": 37.24,
-        "is_favorito": false
-      },
-      {
-        "ticker": "HAS",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.448,
-        "rsi": 40.4,
-        "accel": -0.0348,
-        "slope": -0.0004,
-        "close": 92.53,
+        "rsi": 28.5,
+        "accel": 0.0231,
+        "slope": -0.0053,
+        "close": 185.59,
         "is_favorito": false
       },
       {
@@ -4435,25 +4435,36 @@
         "is_favorito": false
       },
       {
-        "ticker": "ADP",
-        "sector": "Technology",
+        "ticker": "HAS",
+        "sector": "Consumer Cyclical",
         "index": "S&P500",
         "score": 0.447,
-        "rsi": 64.7,
-        "accel": -0.0493,
-        "slope": 0.0032,
-        "close": 277.62,
+        "rsi": 40.4,
+        "accel": -0.0348,
+        "slope": -0.0004,
+        "close": 92.53,
         "is_favorito": false
       },
       {
         "ticker": "AJG",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.447,
+        "score": 0.446,
         "rsi": 62.8,
         "accel": -0.0617,
         "slope": 0.0037,
         "close": 262.69,
+        "is_favorito": false
+      },
+      {
+        "ticker": "ADP",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.446,
+        "rsi": 64.7,
+        "accel": -0.0493,
+        "slope": 0.0032,
+        "close": 277.62,
         "is_favorito": false
       },
       {
@@ -4468,25 +4479,25 @@
         "is_favorito": false
       },
       {
+        "ticker": "IP",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.445,
+        "rsi": 34.9,
+        "accel": 0.0181,
+        "slope": -0.0054,
+        "close": 37.24,
+        "is_favorito": false
+      },
+      {
         "ticker": "HUM",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.445,
+        "score": 0.444,
         "rsi": 63.8,
         "accel": -0.0519,
         "slope": 0.0021,
         "close": 401.54,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MLM",
-        "sector": "Basic Materials",
-        "index": "S&P500",
-        "score": 0.444,
-        "rsi": 39.5,
-        "accel": 0.013,
-        "slope": -0.0037,
-        "close": 514.77,
         "is_favorito": false
       },
       {
@@ -4512,6 +4523,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "HEI.DE",
+        "sector": "Basic Materials",
+        "index": "DAX",
+        "score": 0.443,
+        "rsi": 57.9,
+        "accel": -0.0238,
+        "slope": 0.0022,
+        "close": 161.55,
+        "is_favorito": false
+      },
+      {
         "ticker": "EMR",
         "sector": "Industrials",
         "index": "S&P500",
@@ -4520,6 +4542,17 @@
         "accel": 0.0076,
         "slope": -0.0041,
         "close": 152.82,
+        "is_favorito": false
+      },
+      {
+        "ticker": "PAH3.DE",
+        "sector": "Consumer Cyclical",
+        "index": "DAX",
+        "score": 0.442,
+        "rsi": 68.2,
+        "accel": 0.0223,
+        "slope": 0.0004,
+        "close": 29.49,
         "is_favorito": false
       },
       {
@@ -4534,36 +4567,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "IFX.DE",
-        "sector": "Technology",
-        "index": "DAX",
+        "ticker": "MLM",
+        "sector": "Basic Materials",
+        "index": "S&P500",
         "score": 0.442,
-        "rsi": 60.0,
-        "accel": 0.0998,
-        "slope": -0.007,
-        "close": 60.22,
-        "is_favorito": false
-      },
-      {
-        "ticker": "LDOS",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.441,
-        "rsi": 35.2,
-        "accel": -0.0378,
-        "slope": -0.002,
-        "close": 133.05,
-        "is_favorito": false
-      },
-      {
-        "ticker": "GEHC",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.441,
-        "rsi": 32.1,
-        "accel": -0.0193,
-        "slope": -0.0015,
-        "close": 68.86,
+        "rsi": 39.5,
+        "accel": 0.013,
+        "slope": -0.0037,
+        "close": 514.77,
         "is_favorito": false
       },
       {
@@ -4578,6 +4589,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "LDOS",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.441,
+        "rsi": 35.2,
+        "accel": -0.0378,
+        "slope": -0.002,
+        "close": 133.05,
+        "is_favorito": false
+      },
+      {
         "ticker": "STLD",
         "sector": "Basic Materials",
         "index": "S&P500",
@@ -4589,21 +4611,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "FME.DE",
+        "ticker": "GEHC",
         "sector": "Healthcare",
-        "index": "DAX",
-        "score": 0.438,
-        "rsi": 28.2,
-        "accel": 0.0611,
-        "slope": -0.0035,
-        "close": 38.96,
+        "index": "S&P500",
+        "score": 0.44,
+        "rsi": 32.1,
+        "accel": -0.0193,
+        "slope": -0.0015,
+        "close": 68.86,
         "is_favorito": false
       },
       {
         "ticker": "PGR",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.438,
+        "score": 0.439,
         "rsi": 68.2,
         "accel": -0.0153,
         "slope": 0.0033,
@@ -4614,7 +4636,7 @@
         "ticker": "MA",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.438,
+        "score": 0.439,
         "rsi": 60.5,
         "accel": -0.0327,
         "slope": 0.0033,
@@ -4625,7 +4647,7 @@
         "ticker": "LRCX",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.438,
+        "score": 0.439,
         "rsi": 33.4,
         "accel": 0.0129,
         "slope": -0.005,
@@ -4633,14 +4655,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "PAH3.DE",
-        "sector": "Consumer Cyclical",
-        "index": "DAX",
+        "ticker": "GDDY",
+        "sector": "Technology",
+        "index": "S&P500",
         "score": 0.437,
-        "rsi": 64.7,
-        "accel": 0.0219,
-        "slope": 0.0004,
-        "close": 28.93,
+        "rsi": 67.3,
+        "accel": -0.0844,
+        "slope": 0.0053,
+        "close": 101.31,
         "is_favorito": false
       },
       {
@@ -4655,25 +4677,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "GDDY",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.436,
-        "rsi": 67.3,
-        "accel": -0.0844,
-        "slope": 0.0053,
-        "close": 101.31,
-        "is_favorito": false
-      },
-      {
-        "ticker": "HSY",
+        "ticker": "ADM",
         "sector": "Consumer Defensive",
         "index": "S&P500",
         "score": 0.436,
-        "rsi": 38.1,
-        "accel": 0.0135,
-        "slope": -0.0015,
-        "close": 173.15,
+        "rsi": 60.8,
+        "accel": -0.0609,
+        "slope": 0.0031,
+        "close": 84.61,
         "is_favorito": false
       },
       {
@@ -4688,21 +4699,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "ADM",
+        "ticker": "HSY",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.436,
-        "rsi": 60.8,
-        "accel": -0.0609,
-        "slope": 0.0031,
-        "close": 84.61,
+        "score": 0.435,
+        "rsi": 38.1,
+        "accel": 0.0135,
+        "slope": -0.0015,
+        "close": 173.15,
         "is_favorito": false
       },
       {
         "ticker": "CHRW",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.436,
+        "score": 0.435,
         "rsi": 57.6,
         "accel": -0.0251,
         "slope": 0.0002,
@@ -4710,25 +4721,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "QIA.DE",
-        "sector": "Healthcare",
-        "index": "DAX",
-        "score": 0.434,
-        "rsi": 47.2,
-        "accel": -0.0208,
-        "slope": 0.0,
-        "close": 36.35,
-        "is_favorito": false
-      },
-      {
         "ticker": "TPL",
         "sector": "Energy",
         "index": "S&P500",
-        "score": 0.434,
+        "score": 0.435,
         "rsi": 51.6,
         "accel": -0.0245,
         "slope": 0.0035,
         "close": 362.42,
+        "is_favorito": false
+      },
+      {
+        "ticker": "MMM",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.432,
+        "rsi": 20.1,
+        "accel": 0.03,
+        "slope": -0.0039,
+        "close": 168.56,
         "is_favorito": false
       },
       {
@@ -4746,44 +4757,11 @@
         "ticker": "LEN",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.432,
+        "score": 0.431,
         "rsi": 42.2,
         "accel": -0.0172,
         "slope": -0.0017,
         "close": 83.58,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MMM",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.432,
-        "rsi": 20.1,
-        "accel": 0.03,
-        "slope": -0.0039,
-        "close": 168.56,
-        "is_favorito": false
-      },
-      {
-        "ticker": "BKNG",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.431,
-        "rsi": 38.6,
-        "accel": 0.008,
-        "slope": -0.0041,
-        "close": 193.29,
-        "is_favorito": false
-      },
-      {
-        "ticker": "COST",
-        "sector": "Consumer Defensive",
-        "index": "S&P500",
-        "score": 0.431,
-        "rsi": 37.5,
-        "accel": 0.0038,
-        "slope": -0.0011,
-        "close": 915.74,
         "is_favorito": false
       },
       {
@@ -4801,11 +4779,44 @@
         "ticker": "SLB",
         "sector": "Energy",
         "index": "S&P500",
-        "score": 0.43,
+        "score": 0.431,
         "rsi": 64.1,
         "accel": -0.1133,
         "slope": 0.0061,
         "close": 57.51,
+        "is_favorito": false
+      },
+      {
+        "ticker": "BKNG",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.43,
+        "rsi": 38.6,
+        "accel": 0.008,
+        "slope": -0.0041,
+        "close": 193.29,
+        "is_favorito": false
+      },
+      {
+        "ticker": "COST",
+        "sector": "Consumer Defensive",
+        "index": "S&P500",
+        "score": 0.43,
+        "rsi": 37.5,
+        "accel": 0.0038,
+        "slope": -0.0011,
+        "close": 915.74,
+        "is_favorito": false
+      },
+      {
+        "ticker": "AENA.MC",
+        "sector": "Industrials",
+        "index": "IBEX35",
+        "score": 0.429,
+        "rsi": 35.0,
+        "accel": 0.0256,
+        "slope": -0.0016,
+        "close": 25.42,
         "is_favorito": false
       },
       {
@@ -4834,11 +4845,11 @@
         "ticker": "FER.MC",
         "sector": "Industrials",
         "index": "IBEX35",
-        "score": 0.425,
+        "score": 0.426,
         "rsi": 14.5,
         "accel": 0.1201,
         "slope": -0.0082,
-        "close": 49.89,
+        "close": 49.87,
         "is_favorito": false
       },
       {
@@ -4864,17 +4875,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "BR",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.424,
-        "rsi": 58.2,
-        "accel": -0.1086,
-        "slope": 0.0046,
-        "close": 172.88,
-        "is_favorito": false
-      },
-      {
         "ticker": "AMGN",
         "sector": "Healthcare",
         "index": "S&P500",
@@ -4886,10 +4886,32 @@
         "is_favorito": false
       },
       {
+        "ticker": "BR",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.424,
+        "rsi": 58.2,
+        "accel": -0.1086,
+        "slope": 0.0046,
+        "close": 172.88,
+        "is_favorito": false
+      },
+      {
+        "ticker": "T",
+        "sector": "Communication Services",
+        "index": "S&P500",
+        "score": 0.423,
+        "rsi": 65.4,
+        "accel": -0.0958,
+        "slope": 0.0047,
+        "close": 25.68,
+        "is_favorito": false
+      },
+      {
         "ticker": "VRTX",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.423,
+        "score": 0.422,
         "rsi": 65.0,
         "accel": -0.1201,
         "slope": 0.0045,
@@ -4908,21 +4930,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "T",
-        "sector": "Communication Services",
-        "index": "S&P500",
-        "score": 0.422,
-        "rsi": 65.4,
-        "accel": -0.0958,
-        "slope": 0.0047,
-        "close": 25.68,
-        "is_favorito": false
-      },
-      {
         "ticker": "CDW",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.419,
+        "score": 0.42,
         "rsi": 68.5,
         "accel": -0.0467,
         "slope": 0.0067,
@@ -4952,17 +4963,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "VOW3.DE",
-        "sector": "Consumer Cyclical",
-        "index": "DAX",
-        "score": 0.417,
-        "rsi": 67.9,
-        "accel": -0.0186,
-        "slope": 0.0025,
-        "close": 81.04,
-        "is_favorito": false
-      },
-      {
         "ticker": "PFE",
         "sector": "Healthcare",
         "index": "S&P500",
@@ -4985,21 +4985,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "GEV",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.415,
-        "rsi": 25.4,
-        "accel": 0.0913,
-        "slope": -0.0074,
-        "close": 941.95,
-        "is_favorito": false
-      },
-      {
         "ticker": "ISRG",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.415,
+        "score": 0.414,
         "rsi": 33.6,
         "accel": 0.0029,
         "slope": -0.0043,
@@ -5007,32 +4996,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "BLDR",
+        "ticker": "GEV",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.413,
-        "rsi": 39.6,
-        "accel": 0.0642,
-        "slope": -0.0079,
-        "close": 65.79,
-        "is_favorito": false
-      },
-      {
-        "ticker": "IT",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.412,
-        "rsi": 55.3,
-        "accel": -0.069,
-        "slope": 0.0034,
-        "close": 186.42,
+        "score": 0.414,
+        "rsi": 25.4,
+        "accel": 0.0913,
+        "slope": -0.0074,
+        "close": 941.95,
         "is_favorito": false
       },
       {
         "ticker": "GRMN",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.412,
+        "score": 0.413,
         "rsi": 12.7,
         "accel": 0.0537,
         "slope": -0.0071,
@@ -5040,25 +5018,47 @@
         "is_favorito": false
       },
       {
-        "ticker": "MSCI",
-        "sector": "Financial Services",
+        "ticker": "BLDR",
+        "sector": "Industrials",
         "index": "S&P500",
         "score": 0.412,
-        "rsi": 65.7,
-        "accel": -0.0099,
-        "slope": 0.0007,
-        "close": 573.01,
+        "rsi": 39.6,
+        "accel": 0.0642,
+        "slope": -0.0079,
+        "close": 65.79,
         "is_favorito": false
       },
       {
         "ticker": "NEM",
         "sector": "Basic Materials",
         "index": "S&P500",
-        "score": 0.411,
+        "score": 0.412,
         "rsi": 58.4,
         "accel": -0.2145,
         "slope": 0.0069,
         "close": 128.09,
+        "is_favorito": false
+      },
+      {
+        "ticker": "IT",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.411,
+        "rsi": 55.3,
+        "accel": -0.069,
+        "slope": 0.0034,
+        "close": 186.42,
+        "is_favorito": false
+      },
+      {
+        "ticker": "MSCI",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.411,
+        "rsi": 65.7,
+        "accel": -0.0099,
+        "slope": 0.0007,
+        "close": 573.01,
         "is_favorito": false
       },
       {
@@ -5073,21 +5073,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "PSA",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.408,
-        "rsi": 25.1,
-        "accel": 0.0397,
-        "slope": -0.0041,
-        "close": 302.01,
-        "is_favorito": false
-      },
-      {
         "ticker": "RDDT",
         "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.408,
+        "score": 0.409,
         "rsi": 42.0,
         "accel": -0.0143,
         "slope": -0.0033,
@@ -5095,14 +5084,36 @@
         "is_favorito": false
       },
       {
+        "ticker": "PSA",
+        "sector": "Real Estate",
+        "index": "S&P500",
+        "score": 0.409,
+        "rsi": 25.1,
+        "accel": 0.0397,
+        "slope": -0.0041,
+        "close": 302.01,
+        "is_favorito": false
+      },
+      {
         "ticker": "V",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.408,
+        "score": 0.407,
         "rsi": 66.1,
         "accel": -0.0314,
         "slope": 0.0034,
         "close": 375.07,
+        "is_favorito": false
+      },
+      {
+        "ticker": "NOW",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.405,
+        "rsi": 68.8,
+        "accel": -0.2276,
+        "slope": 0.0086,
+        "close": 141.26,
         "is_favorito": false
       },
       {
@@ -5128,17 +5139,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "NOW",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.405,
-        "rsi": 68.8,
-        "accel": -0.2276,
-        "slope": 0.0086,
-        "close": 141.26,
-        "is_favorito": false
-      },
-      {
         "ticker": "FCX",
         "sector": "Basic Materials",
         "index": "S&P500",
@@ -5153,22 +5153,11 @@
         "ticker": "CLNX.MC",
         "sector": "Real Estate",
         "index": "IBEX35",
-        "score": 0.404,
-        "rsi": 38.1,
+        "score": 0.403,
+        "rsi": 38.2,
         "accel": 0.0377,
         "slope": -0.0032,
-        "close": 25.46,
-        "is_favorito": false
-      },
-      {
-        "ticker": "CMI",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.402,
-        "rsi": 17.9,
-        "accel": 0.1187,
-        "slope": -0.0092,
-        "close": 560.75,
+        "close": 25.47,
         "is_favorito": false
       },
       {
@@ -5183,32 +5172,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "ADBE",
-        "sector": "Technology",
+        "ticker": "CMI",
+        "sector": "Industrials",
         "index": "S&P500",
         "score": 0.401,
-        "rsi": 57.5,
-        "accel": -0.1099,
-        "slope": 0.0053,
-        "close": 266.51,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MKC",
-        "sector": "Consumer Defensive",
-        "index": "S&P500",
-        "score": 0.4,
-        "rsi": 42.1,
-        "accel": -0.0549,
-        "slope": 0.0007,
-        "close": 52.08,
+        "rsi": 17.9,
+        "accel": 0.1187,
+        "slope": -0.0092,
+        "close": 560.75,
         "is_favorito": false
       },
       {
         "ticker": "PNW",
         "sector": "Utilities",
         "index": "S&P500",
-        "score": 0.4,
+        "score": 0.399,
         "rsi": 29.1,
         "accel": 0.0315,
         "slope": -0.002,
@@ -5219,7 +5197,7 @@
         "ticker": "FDXF",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.4,
+        "score": 0.399,
         "rsi": 27.5,
         "accel": 0.0859,
         "slope": -0.0076,
@@ -5227,14 +5205,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "BSX",
-        "sector": "Healthcare",
+        "ticker": "ADBE",
+        "sector": "Technology",
         "index": "S&P500",
         "score": 0.399,
-        "rsi": 38.6,
-        "accel": 0.0509,
-        "slope": -0.0046,
-        "close": 47.8,
+        "rsi": 57.5,
+        "accel": -0.1099,
+        "slope": 0.0053,
+        "close": 266.51,
+        "is_favorito": false
+      },
+      {
+        "ticker": "MKC",
+        "sector": "Consumer Defensive",
+        "index": "S&P500",
+        "score": 0.399,
+        "rsi": 42.1,
+        "accel": -0.0549,
+        "slope": 0.0007,
+        "close": 52.08,
         "is_favorito": false
       },
       {
@@ -5271,6 +5260,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "BSX",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.397,
+        "rsi": 38.6,
+        "accel": 0.0509,
+        "slope": -0.0046,
+        "close": 47.8,
+        "is_favorito": false
+      },
+      {
         "ticker": "TSLA",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
@@ -5293,25 +5293,25 @@
         "is_favorito": false
       },
       {
+        "ticker": "MCK",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.395,
+        "rsi": 63.0,
+        "accel": -0.0257,
+        "slope": 0.0026,
+        "close": 907.99,
+        "is_favorito": false
+      },
+      {
         "ticker": "TDY",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.396,
+        "score": 0.395,
         "rsi": 15.4,
         "accel": 0.0936,
         "slope": -0.0077,
         "close": 610.65,
-        "is_favorito": false
-      },
-      {
-        "ticker": "TKO",
-        "sector": "Communication Services",
-        "index": "S&P500",
-        "score": 0.395,
-        "rsi": 39.7,
-        "accel": 0.0143,
-        "slope": -0.0027,
-        "close": 186.01,
         "is_favorito": false
       },
       {
@@ -5326,32 +5326,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "MCK",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.395,
-        "rsi": 63.0,
-        "accel": -0.0257,
-        "slope": 0.0026,
-        "close": 907.99,
-        "is_favorito": false
-      },
-      {
-        "ticker": "BA",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.395,
-        "rsi": 27.3,
-        "accel": 0.0975,
-        "slope": -0.0075,
-        "close": 212.25,
-        "is_favorito": false
-      },
-      {
         "ticker": "TJX",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.395,
+        "score": 0.394,
         "rsi": 8.6,
         "accel": 0.1599,
         "slope": -0.011,
@@ -5359,10 +5337,32 @@
         "is_favorito": false
       },
       {
+        "ticker": "BA",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.394,
+        "rsi": 27.3,
+        "accel": 0.0975,
+        "slope": -0.0075,
+        "close": 212.25,
+        "is_favorito": false
+      },
+      {
+        "ticker": "TKO",
+        "sector": "Communication Services",
+        "index": "S&P500",
+        "score": 0.394,
+        "rsi": 39.7,
+        "accel": 0.0143,
+        "slope": -0.0027,
+        "close": 186.01,
+        "is_favorito": false
+      },
+      {
         "ticker": "TXN",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.395,
+        "score": 0.393,
         "rsi": 28.3,
         "accel": 0.0709,
         "slope": -0.0061,
@@ -5378,17 +5378,6 @@
         "accel": -0.1276,
         "slope": 0.0058,
         "close": 134.26,
-        "is_favorito": false
-      },
-      {
-        "ticker": "SLR.MC",
-        "sector": "Utilities",
-        "index": "IBEX35",
-        "score": 0.392,
-        "rsi": 57.6,
-        "accel": -0.073,
-        "slope": 0.0026,
-        "close": 17.19,
         "is_favorito": false
       },
       {
@@ -5414,21 +5403,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "SPG",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.39,
-        "rsi": 25.4,
-        "accel": 0.032,
-        "slope": -0.0027,
-        "close": 209.44,
-        "is_favorito": false
-      },
-      {
         "ticker": "WAB",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.389,
+        "score": 0.39,
         "rsi": 29.0,
         "accel": 0.0088,
         "slope": -0.0022,
@@ -5447,21 +5425,21 @@
         "is_favorito": false
       },
       {
-        "ticker": "EXR",
+        "ticker": "SPG",
         "sector": "Real Estate",
         "index": "S&P500",
-        "score": 0.384,
-        "rsi": 18.2,
-        "accel": 0.0432,
-        "slope": -0.0031,
-        "close": 139.25,
+        "score": 0.389,
+        "rsi": 25.4,
+        "accel": 0.032,
+        "slope": -0.0027,
+        "close": 209.44,
         "is_favorito": false
       },
       {
         "ticker": "LITE",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.384,
+        "score": 0.385,
         "rsi": 42.1,
         "accel": -0.0669,
         "slope": 0.0008,
@@ -5469,32 +5447,21 @@
         "is_favorito": true
       },
       {
-        "ticker": "SYK",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.384,
-        "rsi": 30.2,
-        "accel": 0.0183,
-        "slope": -0.0051,
-        "close": 303.13,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MRL.MC",
+        "ticker": "EXR",
         "sector": "Real Estate",
-        "index": "IBEX35",
-        "score": 0.382,
-        "rsi": 19.6,
-        "accel": 0.091,
-        "slope": -0.0058,
-        "close": 13.14,
+        "index": "S&P500",
+        "score": 0.383,
+        "rsi": 18.2,
+        "accel": 0.0432,
+        "slope": -0.0031,
+        "close": 139.25,
         "is_favorito": false
       },
       {
         "ticker": "TRMB",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.382,
+        "score": 0.383,
         "rsi": 64.9,
         "accel": -0.041,
         "slope": 0.0026,
@@ -5502,14 +5469,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "DOW",
-        "sector": "Basic Materials",
+        "ticker": "SYK",
+        "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.382,
-        "rsi": 40.3,
-        "accel": -0.0068,
-        "slope": 0.0006,
-        "close": 29.44,
+        "score": 0.383,
+        "rsi": 30.2,
+        "accel": 0.0183,
+        "slope": -0.0051,
+        "close": 303.13,
         "is_favorito": false
       },
       {
@@ -5535,25 +5502,36 @@
         "is_favorito": false
       },
       {
-        "ticker": "HOOD",
-        "sector": "Financial Services",
+        "ticker": "DOW",
+        "sector": "Basic Materials",
         "index": "S&P500",
-        "score": 0.379,
-        "rsi": 68.1,
-        "accel": -0.175,
-        "slope": 0.0109,
-        "close": 122.11,
+        "score": 0.381,
+        "rsi": 40.3,
+        "accel": -0.0068,
+        "slope": 0.0006,
+        "close": 29.44,
         "is_favorito": false
       },
       {
         "ticker": "ICE",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.379,
+        "score": 0.38,
         "rsi": 63.2,
         "accel": -0.0835,
         "slope": 0.0042,
         "close": 161.26,
+        "is_favorito": false
+      },
+      {
+        "ticker": "HOOD",
+        "sector": "Financial Services",
+        "index": "S&P500",
+        "score": 0.38,
+        "rsi": 68.1,
+        "accel": -0.175,
+        "slope": 0.0109,
+        "close": 122.11,
         "is_favorito": false
       },
       {
@@ -5571,33 +5549,11 @@
         "ticker": "Q",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.379,
+        "score": 0.378,
         "rsi": 28.1,
         "accel": 0.0985,
         "slope": -0.0105,
         "close": 120.47,
-        "is_favorito": false
-      },
-      {
-        "ticker": "EME",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.379,
-        "rsi": 25.4,
-        "accel": 0.086,
-        "slope": -0.0077,
-        "close": 754.16,
-        "is_favorito": false
-      },
-      {
-        "ticker": "INVH",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.379,
-        "rsi": 29.6,
-        "accel": 0.0361,
-        "slope": -0.0023,
-        "close": 28.39,
         "is_favorito": false
       },
       {
@@ -5623,6 +5579,39 @@
         "is_favorito": false
       },
       {
+        "ticker": "INVH",
+        "sector": "Real Estate",
+        "index": "S&P500",
+        "score": 0.378,
+        "rsi": 29.6,
+        "accel": 0.0361,
+        "slope": -0.0023,
+        "close": 28.39,
+        "is_favorito": false
+      },
+      {
+        "ticker": "ZAL.DE",
+        "sector": "Consumer Cyclical",
+        "index": "DAX",
+        "score": 0.378,
+        "rsi": 60.4,
+        "accel": -0.0016,
+        "slope": -0.0006,
+        "close": 23.87,
+        "is_favorito": false
+      },
+      {
+        "ticker": "EME",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.377,
+        "rsi": 25.4,
+        "accel": 0.086,
+        "slope": -0.0077,
+        "close": 754.16,
+        "is_favorito": false
+      },
+      {
         "ticker": "SJM",
         "sector": "Consumer Defensive",
         "index": "S&P500",
@@ -5645,14 +5634,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "IDR.MC",
-        "sector": "Technology",
+        "ticker": "SLR.MC",
+        "sector": "Utilities",
         "index": "IBEX35",
         "score": 0.374,
-        "rsi": 29.2,
-        "accel": 0.0295,
-        "slope": -0.0044,
-        "close": 58.2,
+        "rsi": 59.8,
+        "accel": -0.0738,
+        "slope": 0.0026,
+        "close": 17.38,
         "is_favorito": false
       },
       {
@@ -5692,7 +5681,7 @@
         "ticker": "QCOM",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.369,
+        "score": 0.37,
         "rsi": 63.3,
         "accel": -0.0245,
         "slope": 0.0014,
@@ -5703,7 +5692,7 @@
         "ticker": "AXON",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.367,
+        "score": 0.366,
         "rsi": 35.2,
         "accel": -0.1286,
         "slope": -0.0059,
@@ -5714,7 +5703,7 @@
         "ticker": "RL",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.366,
+        "score": 0.365,
         "rsi": 27.3,
         "accel": 0.1047,
         "slope": -0.0093,
@@ -5722,10 +5711,32 @@
         "is_favorito": false
       },
       {
+        "ticker": "MRL.MC",
+        "sector": "Real Estate",
+        "index": "IBEX35",
+        "score": 0.364,
+        "rsi": 18.5,
+        "accel": 0.0903,
+        "slope": -0.0058,
+        "close": 13.04,
+        "is_favorito": false
+      },
+      {
+        "ticker": "HAL",
+        "sector": "Energy",
+        "index": "S&P500",
+        "score": 0.364,
+        "rsi": 66.4,
+        "accel": -0.1162,
+        "slope": 0.0066,
+        "close": 37.07,
+        "is_favorito": false
+      },
+      {
         "ticker": "LULU",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.364,
+        "score": 0.363,
         "rsi": 36.5,
         "accel": 0.0262,
         "slope": -0.0025,
@@ -5744,14 +5755,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "HAL",
-        "sector": "Energy",
+        "ticker": "FDS",
+        "sector": "Financial Services",
         "index": "S&P500",
         "score": 0.362,
-        "rsi": 66.4,
-        "accel": -0.1162,
-        "slope": 0.0066,
-        "close": 37.07,
+        "rsi": 65.5,
+        "accel": -0.1229,
+        "slope": 0.0061,
+        "close": 301.96,
         "is_favorito": false
       },
       {
@@ -5763,17 +5774,6 @@
         "accel": 0.1201,
         "slope": -0.007,
         "close": 1610.34,
-        "is_favorito": false
-      },
-      {
-        "ticker": "FDS",
-        "sector": "Financial Services",
-        "index": "S&P500",
-        "score": 0.362,
-        "rsi": 65.5,
-        "accel": -0.1229,
-        "slope": 0.0061,
-        "close": 301.96,
         "is_favorito": false
       },
       {
@@ -5799,26 +5799,26 @@
         "is_favorito": false
       },
       {
-        "ticker": "PTC",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.36,
-        "rsi": 43.8,
-        "accel": -0.0577,
-        "slope": 0.0017,
-        "close": 141.02,
-        "is_favorito": false
-      },
-      {
         "ticker": "B",
         "sector": "Basic Materials",
         "index": "Favorito",
-        "score": 0.359,
+        "score": 0.36,
         "rsi": 57.0,
         "accel": -0.1018,
         "slope": 0.0064,
         "close": 44.75,
         "is_favorito": true
+      },
+      {
+        "ticker": "PTC",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.359,
+        "rsi": 43.8,
+        "accel": -0.0577,
+        "slope": 0.0017,
+        "close": 141.02,
+        "is_favorito": false
       },
       {
         "ticker": "GD",
@@ -5835,22 +5835,11 @@
         "ticker": "MTS.MC",
         "sector": "Basic Materials",
         "index": "IBEX35",
-        "score": 0.358,
-        "rsi": 76.2,
+        "score": 0.357,
+        "rsi": 76.0,
         "accel": -0.0191,
         "slope": 0.0016,
-        "close": 67.72,
-        "is_favorito": false
-      },
-      {
-        "ticker": "IRM",
-        "sector": "Real Estate",
-        "index": "S&P500",
-        "score": 0.356,
-        "rsi": 27.0,
-        "accel": 0.0372,
-        "slope": -0.0048,
-        "close": 116.86,
+        "close": 67.62,
         "is_favorito": false
       },
       {
@@ -5865,6 +5854,28 @@
         "is_favorito": true
       },
       {
+        "ticker": "IRM",
+        "sector": "Real Estate",
+        "index": "S&P500",
+        "score": 0.356,
+        "rsi": 27.0,
+        "accel": 0.0372,
+        "slope": -0.0048,
+        "close": 116.86,
+        "is_favorito": false
+      },
+      {
+        "ticker": "IDR.MC",
+        "sector": "Technology",
+        "index": "IBEX35",
+        "score": 0.352,
+        "rsi": 27.2,
+        "accel": 0.0291,
+        "slope": -0.0044,
+        "close": 57.36,
+        "is_favorito": false
+      },
+      {
         "ticker": "URI",
         "sector": "Industrials",
         "index": "S&P500",
@@ -5873,6 +5884,17 @@
         "accel": 0.1101,
         "slope": -0.0087,
         "close": 1009.86,
+        "is_favorito": false
+      },
+      {
+        "ticker": "IEX",
+        "sector": "Industrials",
+        "index": "S&P500",
+        "score": 0.351,
+        "rsi": 24.4,
+        "accel": 0.0143,
+        "slope": -0.003,
+        "close": 223.74,
         "is_favorito": false
       },
       {
@@ -5898,28 +5920,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "IEX",
-        "sector": "Industrials",
-        "index": "S&P500",
-        "score": 0.35,
-        "rsi": 24.4,
-        "accel": 0.0143,
-        "slope": -0.003,
-        "close": 223.74,
-        "is_favorito": false
-      },
-      {
-        "ticker": "CCL",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.348,
-        "rsi": 19.3,
-        "accel": 0.1286,
-        "slope": -0.011,
-        "close": 23.51,
-        "is_favorito": false
-      },
-      {
         "ticker": "ODFL",
         "sector": "Industrials",
         "index": "S&P500",
@@ -5928,6 +5928,17 @@
         "accel": 0.0567,
         "slope": -0.0071,
         "close": 185.87,
+        "is_favorito": false
+      },
+      {
+        "ticker": "CCL",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.347,
+        "rsi": 19.3,
+        "accel": 0.1286,
+        "slope": -0.011,
+        "close": 23.51,
         "is_favorito": false
       },
       {
@@ -5945,33 +5956,11 @@
         "ticker": "TDG",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.346,
+        "score": 0.345,
         "rsi": 26.5,
         "accel": 0.0591,
         "slope": -0.004,
         "close": 1162.05,
-        "is_favorito": false
-      },
-      {
-        "ticker": "HEI.DE",
-        "sector": "Basic Materials",
-        "index": "DAX",
-        "score": 0.346,
-        "rsi": 66.9,
-        "accel": -0.0245,
-        "slope": 0.0022,
-        "close": 166.75,
-        "is_favorito": false
-      },
-      {
-        "ticker": "ADI",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.344,
-        "rsi": 27.3,
-        "accel": 0.0413,
-        "slope": -0.0046,
-        "close": 362.25,
         "is_favorito": false
       },
       {
@@ -5997,14 +5986,25 @@
         "is_favorito": false
       },
       {
-        "ticker": "FRE.DE",
-        "sector": "Healthcare",
-        "index": "DAX",
+        "ticker": "ADI",
+        "sector": "Technology",
+        "index": "S&P500",
         "score": 0.342,
-        "rsi": 14.0,
-        "accel": 0.0359,
-        "slope": -0.0034,
-        "close": 42.17,
+        "rsi": 27.3,
+        "accel": 0.0413,
+        "slope": -0.0046,
+        "close": 362.25,
+        "is_favorito": false
+      },
+      {
+        "ticker": "NCLH",
+        "sector": "Consumer Cyclical",
+        "index": "S&P500",
+        "score": 0.342,
+        "rsi": 17.3,
+        "accel": 0.1313,
+        "slope": -0.0115,
+        "close": 15.57,
         "is_favorito": false
       },
       {
@@ -6019,36 +6019,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "NCLH",
-        "sector": "Consumer Cyclical",
-        "index": "S&P500",
-        "score": 0.341,
-        "rsi": 17.3,
-        "accel": 0.1313,
-        "slope": -0.0115,
-        "close": 15.57,
-        "is_favorito": false
-      },
-      {
         "ticker": "HON",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.34,
+        "score": 0.339,
         "rsi": 24.4,
         "accel": 0.0907,
         "slope": -0.0079,
         "close": 209.61,
-        "is_favorito": false
-      },
-      {
-        "ticker": "RMD",
-        "sector": "Healthcare",
-        "index": "S&P500",
-        "score": 0.339,
-        "rsi": 61.3,
-        "accel": -0.0757,
-        "slope": 0.0043,
-        "close": 228.35,
         "is_favorito": false
       },
       {
@@ -6063,6 +6041,28 @@
         "is_favorito": false
       },
       {
+        "ticker": "RMD",
+        "sector": "Healthcare",
+        "index": "S&P500",
+        "score": 0.338,
+        "rsi": 61.3,
+        "accel": -0.0757,
+        "slope": 0.0043,
+        "close": 228.35,
+        "is_favorito": false
+      },
+      {
+        "ticker": "FOXA",
+        "sector": "Communication Services",
+        "index": "S&P500",
+        "score": 0.337,
+        "rsi": 38.2,
+        "accel": -0.103,
+        "slope": 0.0033,
+        "close": 65.42,
+        "is_favorito": false
+      },
+      {
         "ticker": "INTU",
         "sector": "Technology",
         "index": "S&P500",
@@ -6074,25 +6074,14 @@
         "is_favorito": false
       },
       {
-        "ticker": "FOXA",
-        "sector": "Communication Services",
-        "index": "S&P500",
+        "ticker": "CBK.DE",
+        "sector": "Financial Services",
+        "index": "DAX",
         "score": 0.336,
-        "rsi": 38.2,
-        "accel": -0.103,
-        "slope": 0.0033,
-        "close": 65.42,
-        "is_favorito": false
-      },
-      {
-        "ticker": "COL.MC",
-        "sector": "Real Estate",
-        "index": "IBEX35",
-        "score": 0.336,
-        "rsi": 29.9,
-        "accel": 0.0462,
-        "slope": -0.0033,
-        "close": 5.16,
+        "rsi": 74.4,
+        "accel": -0.0325,
+        "slope": 0.0029,
+        "close": 42.8,
         "is_favorito": false
       },
       {
@@ -6107,21 +6096,10 @@
         "is_favorito": false
       },
       {
-        "ticker": "CBK.DE",
-        "sector": "Financial Services",
-        "index": "DAX",
-        "score": 0.334,
-        "rsi": 75.0,
-        "accel": -0.0326,
-        "slope": 0.0029,
-        "close": 42.99,
-        "is_favorito": false
-      },
-      {
         "ticker": "MTD",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.334,
+        "score": 0.333,
         "rsi": 29.0,
         "accel": 0.0153,
         "slope": -0.0024,
@@ -6132,7 +6110,7 @@
         "ticker": "MAR",
         "sector": "Consumer Cyclical",
         "index": "S&P500",
-        "score": 0.33,
+        "score": 0.329,
         "rsi": 27.1,
         "accel": 0.021,
         "slope": -0.002,
@@ -6143,7 +6121,7 @@
         "ticker": "HII",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.329,
+        "score": 0.328,
         "rsi": 18.8,
         "accel": 0.0791,
         "slope": -0.0078,
@@ -6154,7 +6132,7 @@
         "ticker": "DG",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.325,
+        "score": 0.326,
         "rsi": 73.0,
         "accel": 0.0388,
         "slope": 0.0034,
@@ -6176,7 +6154,7 @@
         "ticker": "LHX",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.323,
+        "score": 0.324,
         "rsi": 20.3,
         "accel": 0.0904,
         "slope": -0.0066,
@@ -6184,10 +6162,21 @@
         "is_favorito": false
       },
       {
+        "ticker": "BAS.DE",
+        "sector": "Basic Materials",
+        "index": "DAX",
+        "score": 0.323,
+        "rsi": 74.5,
+        "accel": -0.0292,
+        "slope": 0.0027,
+        "close": 53.79,
+        "is_favorito": false
+      },
+      {
         "ticker": "PCG",
         "sector": "Utilities",
         "index": "S&P500",
-        "score": 0.32,
+        "score": 0.319,
         "rsi": 33.2,
         "accel": 0.0203,
         "slope": -0.0103,
@@ -6198,7 +6187,7 @@
         "ticker": "VRSK",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.317,
+        "score": 0.318,
         "rsi": 64.2,
         "accel": -0.0103,
         "slope": 0.0031,
@@ -6231,7 +6220,7 @@
         "ticker": "COHR",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.306,
+        "score": 0.307,
         "rsi": 26.8,
         "accel": 0.1662,
         "slope": -0.0156,
@@ -6261,14 +6250,36 @@
         "is_favorito": false
       },
       {
+        "ticker": "RHM.DE",
+        "sector": "Industrials",
+        "index": "DAX",
+        "score": 0.302,
+        "rsi": 24.9,
+        "accel": 0.0293,
+        "slope": -0.0051,
+        "close": 1049.6,
+        "is_favorito": false
+      },
+      {
         "ticker": "DE",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.299,
+        "score": 0.3,
         "rsi": 73.2,
         "accel": -0.0277,
         "slope": 0.0063,
         "close": 693.53,
+        "is_favorito": false
+      },
+      {
+        "ticker": "ACN",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.297,
+        "rsi": 67.3,
+        "accel": -0.1065,
+        "slope": 0.0046,
+        "close": 186.72,
         "is_favorito": false
       },
       {
@@ -6283,17 +6294,6 @@
         "is_favorito": false
       },
       {
-        "ticker": "ACN",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.296,
-        "rsi": 67.3,
-        "accel": -0.1065,
-        "slope": 0.0046,
-        "close": 186.72,
-        "is_favorito": false
-      },
-      {
         "ticker": "MPC",
         "sector": "Energy",
         "index": "S&P500",
@@ -6302,17 +6302,6 @@
         "accel": -0.2487,
         "slope": 0.0087,
         "close": 388.9,
-        "is_favorito": false
-      },
-      {
-        "ticker": "CIEN",
-        "sector": "Technology",
-        "index": "S&P500",
-        "score": 0.295,
-        "rsi": 20.5,
-        "accel": 0.0532,
-        "slope": -0.0092,
-        "close": 321.0,
         "is_favorito": false
       },
       {
@@ -6327,10 +6316,21 @@
         "is_favorito": false
       },
       {
+        "ticker": "CIEN",
+        "sector": "Technology",
+        "index": "S&P500",
+        "score": 0.295,
+        "rsi": 20.5,
+        "accel": 0.0532,
+        "slope": -0.0092,
+        "close": 321.0,
+        "is_favorito": false
+      },
+      {
         "ticker": "PSKY",
         "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.294,
+        "score": 0.295,
         "rsi": 62.7,
         "accel": -0.2005,
         "slope": 0.0087,
@@ -6371,6 +6371,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "MBG.DE",
+        "sector": "Consumer Cyclical",
+        "index": "DAX",
+        "score": 0.286,
+        "rsi": 74.2,
+        "accel": -0.0029,
+        "slope": 0.0011,
+        "close": 48.24,
+        "is_favorito": false
+      },
+      {
         "ticker": "CDNS",
         "sector": "Technology",
         "index": "S&P500",
@@ -6385,7 +6396,7 @@
         "ticker": "NWSA",
         "sector": "Communication Services",
         "index": "S&P500",
-        "score": 0.283,
+        "score": 0.284,
         "rsi": 71.5,
         "accel": -0.043,
         "slope": 0.0052,
@@ -6396,22 +6407,11 @@
         "ticker": "IQV",
         "sector": "Healthcare",
         "index": "S&P500",
-        "score": 0.282,
+        "score": 0.283,
         "rsi": 78.6,
         "accel": -0.129,
         "slope": 0.0065,
         "close": 267.77,
-        "is_favorito": false
-      },
-      {
-        "ticker": "MBG.DE",
-        "sector": "Consumer Cyclical",
-        "index": "DAX",
-        "score": 0.282,
-        "rsi": 75.5,
-        "accel": -0.0029,
-        "slope": 0.0011,
-        "close": 48.56,
         "is_favorito": false
       },
       {
@@ -6440,7 +6440,7 @@
         "ticker": "NOC",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.28,
+        "score": 0.279,
         "rsi": 27.1,
         "accel": 0.037,
         "slope": -0.0052,
@@ -6451,11 +6451,11 @@
         "ticker": "DBK.DE",
         "sector": "Financial Services",
         "index": "DAX",
-        "score": 0.28,
-        "rsi": 76.6,
-        "accel": -0.0551,
+        "score": 0.279,
+        "rsi": 77.8,
+        "accel": -0.0552,
         "slope": 0.004,
-        "close": 35.49,
+        "close": 35.56,
         "is_favorito": false
       },
       {
@@ -6473,22 +6473,11 @@
         "ticker": "CLX",
         "sector": "Consumer Defensive",
         "index": "S&P500",
-        "score": 0.277,
+        "score": 0.276,
         "rsi": 17.6,
         "accel": 0.0161,
         "slope": -0.0055,
         "close": 93.06,
-        "is_favorito": false
-      },
-      {
-        "ticker": "RHM.DE",
-        "sector": "Industrials",
-        "index": "DAX",
-        "score": 0.273,
-        "rsi": 20.5,
-        "accel": 0.0287,
-        "slope": -0.0051,
-        "close": 1025.6,
         "is_favorito": false
       },
       {
@@ -6514,6 +6503,17 @@
         "is_favorito": false
       },
       {
+        "ticker": "VOW3.DE",
+        "sector": "Consumer Cyclical",
+        "index": "DAX",
+        "score": 0.26,
+        "rsi": 71.3,
+        "accel": -0.0191,
+        "slope": 0.0025,
+        "close": 83.34,
+        "is_favorito": false
+      },
+      {
         "ticker": "RVTY",
         "sector": "Healthcare",
         "index": "S&P500",
@@ -6528,7 +6528,7 @@
         "ticker": "CPRT",
         "sector": "Industrials",
         "index": "S&P500",
-        "score": 0.25,
+        "score": 0.251,
         "rsi": 63.4,
         "accel": -0.1402,
         "slope": 0.0066,
@@ -6583,7 +6583,7 @@
         "ticker": "EQT",
         "sector": "Energy",
         "index": "S&P500",
-        "score": 0.223,
+        "score": 0.222,
         "rsi": 72.1,
         "accel": -0.0582,
         "slope": 0.0021,
@@ -6594,7 +6594,7 @@
         "ticker": "GEN",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.215,
+        "score": 0.216,
         "rsi": 73.8,
         "accel": -0.1075,
         "slope": 0.0047,
@@ -6605,7 +6605,7 @@
         "ticker": "TYL",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.215,
+        "score": 0.216,
         "rsi": 71.8,
         "accel": -0.2252,
         "slope": 0.0108,
@@ -6616,7 +6616,7 @@
         "ticker": "COIN",
         "sector": "Financial Services",
         "index": "S&P500",
-        "score": 0.213,
+        "score": 0.214,
         "rsi": 62.7,
         "accel": -0.2362,
         "slope": 0.0146,
@@ -6627,18 +6627,18 @@
         "ticker": "BMW.DE",
         "sector": "Consumer Cyclical",
         "index": "DAX",
-        "score": 0.203,
-        "rsi": 70.6,
-        "accel": -0.0374,
+        "score": 0.2,
+        "rsi": 73.3,
+        "accel": -0.0381,
         "slope": 0.0028,
-        "close": 63.02,
+        "close": 64.22,
         "is_favorito": false
       },
       {
         "ticker": "JKHY",
         "sector": "Technology",
         "index": "S&P500",
-        "score": 0.19,
+        "score": 0.191,
         "rsi": 73.8,
         "accel": -0.0798,
         "slope": 0.0067,
@@ -6725,8 +6725,8 @@
     ],
     "regime": 1,
     "total_analyzed": 579,
-    "timestamp": "2026-09-07T14:08:39.392640"
+    "timestamp": "2026-09-08T12:45:13.887332"
   },
-  "generated_at": "2026-09-07T14:08:39.393098",
+  "generated_at": "2026-09-08T12:45:13.887661",
   "version": "L'CRACK v7.3 + PISTOLERO v3.2"
 }
